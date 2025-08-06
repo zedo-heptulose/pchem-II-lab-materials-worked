@@ -1,0 +1,1716 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Monday, 24 February 2025 07:44AM
+
+    Process ID: 3199586
+    Host:       hpc-m36-1-1.local
+    PSIDATADIR: /gpfs/home/gdb20/.conda/envs/tutorial/share/psi4
+    Memory:     953.7 MiB
+    Threads:    1
+    
+Scratch directory: /tmp/
+gradient() will perform analytic gradient computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, 3
+    Auxiliary basis highest AM E, G, H:  7, 7, 4
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on hpc-m36-1-1.local
+*** at Mon Feb 24 07:45:08 2025
+
+   => Loading Basis Set <=
+
+    Name: STO-3G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line    61 file /gpfs/home/gdb20/.conda/envs/tutorial/share/psi4/basis/sto-3g.gbs 
+    atoms 7-16 entry H          line    19 file /gpfs/home/gdb20/.conda/envs/tutorial/share/psi4/basis/sto-3g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        1 Threads,    953 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -1.410037184195     0.513981889022     0.108827804421    12.000000000000
+         C           -0.198375155079     1.433293457304    -0.001654112505    12.000000000000
+         C            1.036153650761     1.005559625038    -0.094451339553    12.000000000000
+         C            1.425579305695    -0.468737277649    -0.110610696740    12.000000000000
+         C            0.268446183187    -1.370947757782     0.369948726335    12.000000000000
+         C           -1.062100610086    -0.939455974326    -0.278904966416    12.000000000000
+         H           -1.788422617211     0.540726859264     1.131637961703     1.007825032230
+         H           -2.209668398009     0.885936570645    -0.530239713215     1.007825032230
+         H           -0.409100271449     2.496170018767     0.009808749846     1.007825032230
+         H            1.854426279570     1.711311972831    -0.175608860892     1.007825032230
+         H            1.715879693787    -0.751906317173    -1.123316192511     1.007825032230
+         H            2.300355605821    -0.621937391566     0.519836604548     1.007825032230
+         H            0.178902953193    -1.299140500843     1.452024143114     1.007825032230
+         H            0.484955052110    -2.409173473406     0.127665832594     1.007825032230
+         H           -0.973534537131    -1.014107751732    -1.360868294540     1.007825032230
+         H           -1.864228866477    -1.606024230727     0.030557063898     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.15610  B =      0.15167  C =      0.08465 [cm^-1]
+  Rotational constants: A =   4679.66632  B =   4546.90614  C =   2537.86607 [MHz]
+  Nuclear repulsion =  236.300405538372019
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 28
+    Number of basis functions: 40
+    Number of Cartesian functions: 40
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: (STO-3G AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1-6  entry C          line   198 file /gpfs/home/gdb20/.conda/envs/tutorial/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 7-16 entry H          line    18 file /gpfs/home/gdb20/.conda/envs/tutorial/share/psi4/basis/def2-universal-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.011 GiB; user supplied 0.698 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:               715
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       1.1250
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 210
+    Number of basis functions: 630
+    Number of Cartesian functions: 734
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  Minimum eigenvalue in the overlap matrix is 1.7685732343E-01.
+  Reciprocal condition number of the overlap matrix is 6.7048338102E-02.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A         40      40 
+   -------------------------
+    Total      40      40
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:  -225.29354181943398   -2.25294e+02   0.00000e+00 
+   @DF-RHF iter   1:  -230.24842960248532   -4.95489e+00   3.21791e-03 ADIIS/DIIS
+   @DF-RHF iter   2:  -230.26108933288955   -1.26597e-02   6.92092e-04 ADIIS/DIIS
+   @DF-RHF iter   3:  -230.26180605780650   -7.16725e-04   1.68115e-04 ADIIS/DIIS
+   @DF-RHF iter   4:  -230.26184510349870   -3.90457e-05   1.32780e-05 DIIS
+   @DF-RHF iter   5:  -230.26184541307111   -3.09572e-07   2.46507e-06 DIIS
+   @DF-RHF iter   6:  -230.26184542242947   -9.35836e-09   5.25272e-07 DIIS
+   @DF-RHF iter   7:  -230.26184542291921   -4.89734e-10   7.08605e-08 DIIS
+   @DF-RHF iter   8:  -230.26184542292825   -9.03810e-12   8.54537e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.041995     2A    -11.041983     3A    -11.038544  
+       4A    -11.038236     5A    -11.011143     6A    -11.010138  
+       7A     -1.068411     8A     -0.959855     9A     -0.954355  
+      10A     -0.806572    11A     -0.775155    12A     -0.660445  
+      13A     -0.627219    14A     -0.580559    15A     -0.553023  
+      16A     -0.520834    17A     -0.497976    18A     -0.491788  
+      19A     -0.478796    20A     -0.431559    21A     -0.405694  
+      22A     -0.385450    23A     -0.296674  
+
+    Virtual:                                                              
+
+      24A      0.334204    25A      0.591645    26A      0.611121  
+      27A      0.618786    28A      0.630366    29A      0.661739  
+      30A      0.690880    31A      0.706716    32A      0.744362  
+      33A      0.745029    34A      0.761083    35A      0.790118  
+      36A      0.796199    37A      0.810388    38A      0.833777  
+      39A      0.953127    40A      1.084643  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @DF-RHF Final Energy:  -230.26184542292825
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            236.3004055383720186
+    One-Electron Energy =                -779.7716961491114489
+    Two-Electron Energy =                 313.2094451878111840
+    Total Energy =                       -230.2618454229282179
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.6441332           -0.6660112           -0.0218781
+ Dipole Y            :          1.8751330           -1.9388221           -0.0636891
+ Dipole Z            :         -0.0738915            0.0764012            0.0025097
+ Magnitude           :                                                    0.0673888
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on hpc-m36-1-1.local at Mon Feb 24 07:45:09 2025
+Module time:
+	user time   =       0.94 seconds =       0.02 minutes
+	system time =       0.02 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =      26.33 seconds =       0.44 minutes
+	system time =       0.55 seconds =       0.01 minutes
+	total time  =         27 seconds =       0.45 minutes
+
+*** tstart() called on hpc-m36-1-1.local
+*** at Mon Feb 24 07:45:09 2025
+
+
+         ------------------------------------------------------------
+                                   SCF GRAD                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -1.410037184195     0.513981889022     0.108827804421    12.000000000000
+         C           -0.198375155079     1.433293457304    -0.001654112505    12.000000000000
+         C            1.036153650761     1.005559625038    -0.094451339553    12.000000000000
+         C            1.425579305695    -0.468737277649    -0.110610696740    12.000000000000
+         C            0.268446183187    -1.370947757782     0.369948726335    12.000000000000
+         C           -1.062100610086    -0.939455974326    -0.278904966416    12.000000000000
+         H           -1.788422617211     0.540726859264     1.131637961703     1.007825032230
+         H           -2.209668398009     0.885936570645    -0.530239713215     1.007825032230
+         H           -0.409100271449     2.496170018767     0.009808749846     1.007825032230
+         H            1.854426279570     1.711311972831    -0.175608860892     1.007825032230
+         H            1.715879693787    -0.751906317173    -1.123316192511     1.007825032230
+         H            2.300355605821    -0.621937391566     0.519836604548     1.007825032230
+         H            0.178902953193    -1.299140500843     1.452024143114     1.007825032230
+         H            0.484955052110    -2.409173473406     0.127665832594     1.007825032230
+         H           -0.973534537131    -1.014107751732    -1.360868294540     1.007825032230
+         H           -1.864228866477    -1.606024230727     0.030557063898     1.007825032230
+
+  Nuclear repulsion =  236.300405538372019
+
+  ==> Basis Set <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 28
+    Number of basis functions: 40
+    Number of Cartesian functions: 40
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+  ==> DFJKGrad: Density-Fitted SCF Gradients <==
+
+    Gradient:                    1
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    OpenMP threads:              1
+    Integrals threads:           1
+    Memory [MiB]:              715
+    Schwarz Cutoff:          1E-12
+    Fitting Condition:       1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 210
+    Number of basis functions: 630
+    Number of Cartesian functions: 734
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+
+  -Total Gradient:
+     Atom            X                  Y                   Z
+    ------   -----------------  -----------------  -----------------
+       1        0.000014041204    -0.000042111790     0.000012141668
+       2       -0.000016176154     0.000008741379    -0.000000448029
+       3        0.000018165539    -0.000003011669     0.000000224126
+       4       -0.000037227430    -0.000025330241    -0.000009479460
+       5        0.000020588122     0.000043876100     0.000036032221
+       6        0.000009800102     0.000044618865    -0.000039517447
+       7       -0.000012916848     0.000018925321     0.000017952210
+       8        0.000014795589    -0.000012456908     0.000009272381
+       9        0.000004007028    -0.000006773106    -0.000008994840
+      10       -0.000007123014    -0.000002249885     0.000009349209
+      11        0.000021378547     0.000005686529    -0.000018933879
+      12       -0.000019535546    -0.000001377287    -0.000008721577
+      13        0.000006678023    -0.000037575365     0.000037820471
+      14       -0.000002266368     0.000021950725     0.000009437363
+      15       -0.000029242835    -0.000028116839    -0.000035232520
+      16        0.000015034042     0.000015204171    -0.000010901897
+
+
+*** tstop() called on hpc-m36-1-1.local at Mon Feb 24 07:45:10 2025
+Module time:
+	user time   =       0.55 seconds =       0.01 minutes
+	system time =       0.01 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =      26.89 seconds =       0.45 minutes
+	system time =       0.56 seconds =       0.01 minutes
+	total time  =         28 seconds =       0.47 minutes
+
+  Based on options and gradient (rms=2.14E-05), recommend projecting translations and projecting rotations.
+hessian() will perform analytic frequency computation.
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, 3
+    Auxiliary basis highest AM E, G, H:  7, 7, 4
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on hpc-m36-1-1.local
+*** at Mon Feb 24 07:45:10 2025
+
+   => Loading Basis Set <=
+
+    Name: STO-3G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-6  entry C          line    61 file /gpfs/home/gdb20/.conda/envs/tutorial/share/psi4/basis/sto-3g.gbs 
+    atoms 7-16 entry H          line    19 file /gpfs/home/gdb20/.conda/envs/tutorial/share/psi4/basis/sto-3g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        1 Threads,    953 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -1.410037184195     0.513981889022     0.108827804421    12.000000000000
+         C           -0.198375155079     1.433293457304    -0.001654112505    12.000000000000
+         C            1.036153650761     1.005559625038    -0.094451339553    12.000000000000
+         C            1.425579305695    -0.468737277649    -0.110610696740    12.000000000000
+         C            0.268446183187    -1.370947757782     0.369948726335    12.000000000000
+         C           -1.062100610086    -0.939455974326    -0.278904966416    12.000000000000
+         H           -1.788422617211     0.540726859264     1.131637961703     1.007825032230
+         H           -2.209668398009     0.885936570645    -0.530239713215     1.007825032230
+         H           -0.409100271449     2.496170018767     0.009808749846     1.007825032230
+         H            1.854426279570     1.711311972831    -0.175608860892     1.007825032230
+         H            1.715879693787    -0.751906317173    -1.123316192511     1.007825032230
+         H            2.300355605821    -0.621937391566     0.519836604548     1.007825032230
+         H            0.178902953193    -1.299140500843     1.452024143114     1.007825032230
+         H            0.484955052110    -2.409173473406     0.127665832594     1.007825032230
+         H           -0.973534537131    -1.014107751732    -1.360868294540     1.007825032230
+         H           -1.864228866477    -1.606024230727     0.030557063898     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.15610  B =      0.15167  C =      0.08465 [cm^-1]
+  Rotational constants: A =   4679.66632  B =   4546.90614  C =   2537.86607 [MHz]
+  Nuclear repulsion =  236.300405538372019
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 46
+  Nalpha       = 23
+  Nbeta        = 23
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-08
+  Density threshold  = 1.00e-08
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 28
+    Number of basis functions: 40
+    Number of Cartesian functions: 40
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: (STO-3G AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1-6  entry C          line   198 file /gpfs/home/gdb20/.conda/envs/tutorial/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 7-16 entry H          line    18 file /gpfs/home/gdb20/.conda/envs/tutorial/share/psi4/basis/def2-universal-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.011 GiB; user supplied 0.698 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:               715
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       1.1250
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 210
+    Number of basis functions: 630
+    Number of Cartesian functions: 734
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  Minimum eigenvalue in the overlap matrix is 1.7685732343E-01.
+  Reciprocal condition number of the overlap matrix is 6.7048338102E-02.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A         40      40 
+   -------------------------
+    Total      40      40
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:  -225.29354181954295   -2.25294e+02   0.00000e+00 
+   @DF-RHF iter   1:  -230.24842960258820   -4.95489e+00   3.21791e-03 ADIIS/DIIS
+   @DF-RHF iter   2:  -230.26108933299227   -1.26597e-02   6.92092e-04 ADIIS/DIIS
+   @DF-RHF iter   3:  -230.26180605790876   -7.16725e-04   1.68115e-04 ADIIS/DIIS
+   @DF-RHF iter   4:  -230.26184510360127   -3.90457e-05   1.32780e-05 DIIS
+   @DF-RHF iter   5:  -230.26184541317394   -3.09573e-07   2.46507e-06 DIIS
+   @DF-RHF iter   6:  -230.26184542253245   -9.35850e-09   5.25272e-07 DIIS
+   @DF-RHF iter   7:  -230.26184542302218   -4.89734e-10   7.08605e-08 DIIS
+   @DF-RHF iter   8:  -230.26184542303076   -8.58336e-12   8.54537e-09 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.041995     2A    -11.041983     3A    -11.038544  
+       4A    -11.038236     5A    -11.011143     6A    -11.010138  
+       7A     -1.068411     8A     -0.959855     9A     -0.954355  
+      10A     -0.806572    11A     -0.775155    12A     -0.660445  
+      13A     -0.627219    14A     -0.580559    15A     -0.553023  
+      16A     -0.520834    17A     -0.497976    18A     -0.491788  
+      19A     -0.478796    20A     -0.431559    21A     -0.405694  
+      22A     -0.385450    23A     -0.296674  
+
+    Virtual:                                                              
+
+      24A      0.334204    25A      0.591645    26A      0.611121  
+      27A      0.618786    28A      0.630366    29A      0.661739  
+      30A      0.690880    31A      0.706716    32A      0.744362  
+      33A      0.745029    34A      0.761083    35A      0.790118  
+      36A      0.796199    37A      0.810388    38A      0.833777  
+      39A      0.953127    40A      1.084643  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    23 ]
+    NA   [    23 ]
+    NB   [    23 ]
+
+  @DF-RHF Final Energy:  -230.26184542303076
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            236.3004055383720186
+    One-Electron Energy =                -779.7716961490938274
+    Two-Electron Energy =                 313.2094451876910171
+    Total Energy =                       -230.2618454230307634
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :          0.6441332           -0.6660112           -0.0218781
+ Dipole Y            :          1.8751330           -1.9388221           -0.0636891
+ Dipole Z            :         -0.0738915            0.0764012            0.0025097
+ Magnitude           :                                                    0.0673888
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on hpc-m36-1-1.local at Mon Feb 24 07:45:11 2025
+Module time:
+	user time   =       0.95 seconds =       0.02 minutes
+	system time =       0.02 seconds =       0.00 minutes
+	total time  =          1 seconds =       0.02 minutes
+Total time:
+	user time   =      27.85 seconds =       0.46 minutes
+	system time =       0.58 seconds =       0.01 minutes
+	total time  =         29 seconds =       0.48 minutes
+
+*** tstart() called on hpc-m36-1-1.local
+*** at Mon Feb 24 07:45:11 2025
+
+
+         ------------------------------------------------------------
+                                   SCF HESS                          
+                          Rob Parrish, Justin Turney,                
+                       Andy Simmonett, and Alex Sokolov              
+         ------------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C           -1.410037184195     0.513981889022     0.108827804421    12.000000000000
+         C           -0.198375155079     1.433293457304    -0.001654112505    12.000000000000
+         C            1.036153650761     1.005559625038    -0.094451339553    12.000000000000
+         C            1.425579305695    -0.468737277649    -0.110610696740    12.000000000000
+         C            0.268446183187    -1.370947757782     0.369948726335    12.000000000000
+         C           -1.062100610086    -0.939455974326    -0.278904966416    12.000000000000
+         H           -1.788422617211     0.540726859264     1.131637961703     1.007825032230
+         H           -2.209668398009     0.885936570645    -0.530239713215     1.007825032230
+         H           -0.409100271449     2.496170018767     0.009808749846     1.007825032230
+         H            1.854426279570     1.711311972831    -0.175608860892     1.007825032230
+         H            1.715879693787    -0.751906317173    -1.123316192511     1.007825032230
+         H            2.300355605821    -0.621937391566     0.519836604548     1.007825032230
+         H            0.178902953193    -1.299140500843     1.452024143114     1.007825032230
+         H            0.484955052110    -2.409173473406     0.127665832594     1.007825032230
+         H           -0.973534537131    -1.014107751732    -1.360868294540     1.007825032230
+         H           -1.864228866477    -1.606024230727     0.030557063898     1.007825032230
+
+  Nuclear repulsion =  236.300405538372019
+
+  ==> Basis Set <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 28
+    Number of basis functions: 40
+    Number of Cartesian functions: 40
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+  ==> DFJKGrad: Density-Fitted SCF Gradients <==
+
+    Gradient:                    2
+    J tasked:                  Yes
+    K tasked:                  Yes
+    wK tasked:                  No
+    OpenMP threads:              1
+    Integrals threads:           1
+    Memory [MiB]:              715
+    Schwarz Cutoff:          1E-12
+    Fitting Condition:       1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 210
+    Number of basis functions: 630
+    Number of Cartesian functions: 734
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  DFHelper Memory: AOs need 0.011 GiB; user supplied 0.838 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:               858
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       1.1250
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 210
+    Number of basis functions: 630
+    Number of Cartesian functions: 734
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+
+   ==> Coupled-Perturbed RHF Solver <==
+
+    Maxiter             =         100
+    Convergence         =   1.000E-06
+    Number of equations =          48
+   -----------------------------------------------------
+     Iter   Residual RMS      Max RMS  Remain  Time [s]
+   -----------------------------------------------------
+        1      3.332e-01    5.939e-01      48         0
+        2      7.624e-02    1.427e-01      48         1
+        3      1.872e-02    3.783e-02      48         1
+        4      6.083e-03    1.187e-02      48         1
+        5      1.700e-03    3.164e-03      48         1
+        6      3.603e-04    7.149e-04      48         1
+        7      8.419e-05    1.952e-04      48         2
+        8      1.606e-05    3.174e-05      48         2
+        9      3.243e-06    8.704e-06      46         2
+       10      6.342e-07    1.441e-06       5         2
+       11      5.321e-07    2.644e-07       0         2
+  ## Total Hessian (Symmetry 0) ##
+  Irrep: 1 Size: 48 x 48
+
+                 1                   2                   3                   4                   5
+
+    1     0.78931505686035    -0.04613224159072     0.01812638898558    -0.24477572580482    -0.09553609504401
+    2    -0.04613224159072     0.70675643045050    -0.02466372646194    -0.09061203099588    -0.20068217160271
+    3     0.01812638898558    -0.02466372646194     0.82844520440507     0.01225973632425     0.00910540360169
+    4    -0.24477572580482    -0.09061203099588     0.01225973632425     1.14666707647190    -0.17871900804609
+    5    -0.09553609504401    -0.20068217160271     0.00910540360169    -0.17871900804609     0.90787079642420
+    6     0.01267906738588     0.01044463278735    -0.10515545924472    -0.07896763976291     0.00906122697281
+    7    -0.03410893299174     0.00525628585712     0.00340223001204    -0.75377592932463     0.20952903382241
+    8    -0.02359229860696     0.02111671032768     0.00271766964369     0.19853423879405    -0.23667159916539
+    9     0.00511868141908    -0.00082609747398     0.00805312506746     0.05406684754339    -0.01487905439004
+   10     0.00480390075803    -0.00176462447760     0.00004125303628    -0.00427275227758     0.04356336564041
+   11    -0.00122618506734     0.00096173496542     0.00002339911942     0.01458826454509    -0.00906666465275
+   12    -0.00027716663443    -0.00084178092214    -0.01094806211161     0.00028922215395    -0.00408467434821
+   13    -0.00747890270551     0.01181086573211    -0.00382244684010     0.00041994126590     0.00051094758963
+   14     0.04038965845718    -0.01366304353708     0.02200404547059    -0.00188962834800     0.00647438108127
+   15     0.01060967859732    -0.00029824004728     0.00762384683314    -0.00037533106780    -0.00029734904320
+   16    -0.12703139271516     0.03936787278322     0.01091738613865     0.01342438793409    -0.03426999453036
+   17     0.04203670522345    -0.28597701961378    -0.04768305327167    -0.00056898183766    -0.03058462333107
+   18     0.01364906215717    -0.04757826815808    -0.13614614555249    -0.00101441458152     0.00562820179217
+   19    -0.11750988997241     0.00669834868511     0.12256375430083    -0.01752970625137     0.00073877093708
+   20     0.00519754388591    -0.07317709612985    -0.00245827775267    -0.01199040409788     0.00317446187578
+   21     0.11355984410256    -0.00662794141029    -0.40331165040970     0.00024347366396    -0.00019289831583
+   22    -0.27463644651329     0.09538390193911    -0.16533705201865    -0.02604819154066     0.01290988721817
+   23     0.09438881350871    -0.11681241132269     0.07589161150447    -0.02394312595724     0.01175859096774
+   24    -0.16068415431073     0.07595619856137    -0.21056598419255     0.00824872526398    -0.00219672549065
+   25     0.00883671523404    -0.03298217922016    -0.00153077754145    -0.09329567882689     0.06926648902588
+   26     0.00922934812130    -0.01306848400354    -0.00137552541841     0.07644762923918    -0.45403009885200
+   27    -0.00197558551088     0.00320778955842     0.00385940931953     0.00374150892385    -0.00290396359552
+   28    -0.00248524574124     0.00347427222263     0.00125032973291    -0.02128344417673    -0.02997801226197
+   29     0.00198972917395    -0.00254812787363    -0.00014400756297     0.01987141511628     0.01425202506259
+   30     0.00193335623138    -0.00059635379779     0.01799057797439     0.00153542095151     0.00253121509515
+   31    -0.00026273131529    -0.00004108194287     0.00058863222435     0.00152608003303     0.00083042013202
+   32    -0.00081917546999    -0.00102196293362    -0.00196285043156    -0.00350407697495    -0.00321474295591
+   33     0.00005815469902     0.00025262473316     0.00038621270970    -0.00108495287253     0.00141196362105
+   34     0.00035015998346    -0.00070808843190    -0.00037795793186     0.00134155347047    -0.00009670516017
+   35    -0.00057145166243    -0.00064011004915     0.00079200501137    -0.00259050113827    -0.00622874827629
+   36    -0.00007375478672     0.00027218859938     0.00036278790675    -0.00002395976198    -0.00081214718406
+   37     0.00159097303682    -0.00155350386512     0.00051019216039    -0.00034356078834    -0.00019342023724
+   38    -0.00069304269420     0.00072595052915     0.00062722853238    -0.00017099251490    -0.00018208220877
+   39     0.00125626477112    -0.00075091074734     0.00116467346205    -0.00008514039348     0.00012625680990
+   40    -0.00664177067857    -0.00022641741860    -0.00497303130928    -0.00086433329113    -0.00086375373312
+   41     0.00047284964849     0.00107832792911     0.00067131346732    -0.00041409228194     0.00051926795803
+   42    -0.00367729721059     0.00003715404433    -0.00149687818054     0.00020254690619    -0.00039339454451
+   43    -0.00163734002241     0.00091886445020     0.01034579235563    -0.00004206320996    -0.00025919605043
+   44     0.00607760546727    -0.00136910871726    -0.04538181197020     0.00091793968833     0.00190736442006
+   45     0.00024683205298     0.00251248398526    -0.00401420040523    -0.00008465538915     0.00064284800294
+   46     0.01167156798022     0.01110975773359    -0.00396442901227    -0.00114764986979     0.00256727321789
+   47    -0.03121175905526    -0.02167961902286     0.01183657633492     0.00404335869716    -0.00529616390236
+   48    -0.01054937240463    -0.01049975320915     0.00375254252226     0.00104861218342    -0.00274690911190
+
+                 6                   7                   8                   9                  10
+
+    1     0.01267906738588    -0.03410893299174    -0.02359229860696     0.00511868141908     0.00480390075803
+    2     0.01044463278735     0.00525628585712     0.02111671032768    -0.00082609747398    -0.00176462447760
+    3    -0.10515545924472     0.00340223001204     0.00271766964369     0.00805312506746     0.00004125303628
+    4    -0.07896763976291    -0.75377592932463     0.19853423879405     0.05406684754339    -0.00427275227758
+    5     0.00906122697281     0.20952903382241    -0.23667159916539    -0.01487905439004     0.04356336564041
+    6     0.20607704709247     0.05354996278633    -0.01512244105189    -0.07760157856284     0.00178292752122
+    7     0.05354996278633     1.22601563998264    -0.07700351830941    -0.08736745933555    -0.13775182370221
+    8    -0.01512244105189    -0.07700351830941     0.82763908424414    -0.00056153268141     0.04658676073064
+    9    -0.07760157856284    -0.08736745933555    -0.00056153268141     0.20695999152750     0.00110865123840
+   10     0.00178292752122    -0.13775182370221     0.04658676073064     0.00110865123840     0.80435568228772
+   11    -0.00164364507178     0.04167918682213    -0.30880792074231    -0.00267356173304    -0.02624417106214
+   12     0.00840026740784     0.00194734161283    -0.00147840002889    -0.10405355241453     0.03195918306749
+   13    -0.00042679803708     0.01350445174632    -0.00061514666328    -0.00479839897688    -0.22443424873366
+   14     0.00057864026547    -0.03387055696299    -0.03023459637136     0.01302055778694    -0.08442879399641
+   15     0.00038312641798    -0.00214133216429    -0.00148635900072     0.00210064087832     0.04818082266503
+   16    -0.00966527971406     0.00334811849117     0.00185559847903    -0.00089673588600    -0.03527221810248
+   17    -0.00499429266797     0.00427432067084     0.00351794187688    -0.00051862599950    -0.02333812236320
+   18     0.00253072471020    -0.00048767605267     0.00019916983521     0.00041139363652     0.01126764311576
+   19     0.03421674891650     0.00098245507252    -0.00416715791293    -0.00017038739650    -0.00009391732636
+   20     0.02587506758311     0.00006611981122    -0.00276306772225    -0.00020481006068     0.00014856186971
+   21     0.00518660103431    -0.00176486949221    -0.00017559965820    -0.00027415060244    -0.00010827990761
+   22    -0.01923720176768    -0.00021801508482    -0.00461643157622    -0.00053817489474     0.00057252459534
+   23    -0.01845565885577    -0.00205218181054    -0.00460261353152     0.00030767627209    -0.00041517352113
+   24     0.00649973624489     0.00062034370440     0.00106117477611    -0.00050424765385    -0.00020164144028
+   25     0.00310360763427    -0.00291759940177     0.04345117531749     0.00053081559482    -0.00507142333632
+   26    -0.00363713212516    -0.00646420181352    -0.00429459759656     0.00031480358388     0.00019528997468
+   27    -0.05465082587718     0.00038832821727    -0.00309833327515     0.00858350412060     0.00244247609682
+   28     0.00306681827754    -0.29946003052849    -0.18789625104555     0.02389470756635     0.01199415805611
+   29    -0.00145692039357    -0.19503026321121    -0.24581786020186     0.01918257984830    -0.02892792363586
+   30     0.00840268419692     0.02445198613908     0.01803886269040    -0.05669862708703    -0.00169262769733
+   31    -0.00011108462603    -0.00399393898122     0.00583984212087     0.01096664293006    -0.10210230105999
+   32     0.00055891958708     0.01677251413490    -0.01295281606071    -0.04058753928848     0.02502830053399
+   33    -0.00036610381460    -0.00064998919991     0.00114116482651     0.00777810110117     0.08487840640357
+   34    -0.00065317588669    -0.00635173969691     0.00091982921658    -0.00362049352791    -0.31554798068951
+   35     0.00055545774728     0.03921233243509    -0.00621132627977     0.02633876215977     0.04241425800532
+   36    -0.00043766778874     0.00542336281312    -0.00246863813520     0.00477318896184    -0.17435397049145
+   37     0.00024051728281     0.00034801999227     0.00139607895787    -0.00068198441718    -0.00408780226906
+   38    -0.00013166920962     0.00024464890810     0.00146021274926     0.00003967099377    -0.00268593320340
+   39     0.00003591906428    -0.00047664547399    -0.00055786969676     0.00053774420786    -0.00115937503867
+   40     0.00000228158849    -0.00580385774657    -0.00189987880071     0.00218767623100     0.00854614936071
+   41    -0.00002632936121    -0.00334391736876    -0.00034662110420     0.00101723339829     0.00714768880208
+   42    -0.00004043959319     0.00290321392991     0.00160953164750    -0.00003804840596    -0.00250831399307
+   43    -0.00053177325066    -0.00010300300788     0.00015214337696     0.00026399928274     0.00238852766327
+   44     0.00026944252582     0.00010061730896    -0.00042409339694    -0.00001413802504    -0.00049033575056
+   45     0.00048067936373    -0.00014881537930    -0.00001838893423     0.00003736294966     0.00146122017502
+   46     0.00095102129094     0.00028618291466     0.00105501603833    -0.00006438744959    -0.00402647392739
+   47    -0.00187529893233     0.00062957173411    -0.00060683661088     0.00004407657206     0.00321085624169
+   48     0.00025528919642     0.00035001799430     0.00019998980644    -0.00006484809547    -0.00309837430225
+
+                11                  12                  13                  14                  15
+
+    1    -0.00122618506734    -0.00027716663443    -0.00747890270551     0.04038965845718     0.01060967859732
+    2     0.00096173496542    -0.00084178092214     0.01181086573211    -0.01366304353708    -0.00029824004728
+    3     0.00002339911942    -0.01094806211161    -0.00382244684010     0.02200404547059     0.00762384683314
+    4     0.01458826454509     0.00028922215395     0.00041994126590    -0.00188962834800    -0.00037533106780
+    5    -0.00906666465275    -0.00408467434821     0.00051094758963     0.00647438108127    -0.00029734904320
+    6    -0.00164364507178     0.00840026740784    -0.00042679803708     0.00057864026547     0.00038312641798
+    7     0.04167918682213     0.00194734161283     0.01350445174632    -0.03387055696299    -0.00214133216429
+    8    -0.30880792074231    -0.00147840002889    -0.00061514666328    -0.03023459637136    -0.00148635900072
+    9    -0.00267356173304    -0.10405355241453    -0.00479839897688     0.01302055778694     0.00210064087832
+   10    -0.02624417106214     0.03195918306749    -0.22443424873366    -0.08442879399641     0.04818082266503
+   11     0.69508745175015     0.01834607715115    -0.08195712147701    -0.18188059255121     0.03433750892677
+   12     0.01834607715115     0.82507369331907     0.04590897754895     0.03616106454488    -0.14283972288264
+   13    -0.08195712147701     0.04590897754895     0.68963176095989    -0.03593636591407    -0.02036725598503
+   14    -0.18188059255121     0.03616106454488    -0.03593636591407     0.84344131665692     0.04209762958085
+   15     0.03433750892677    -0.14283972288264    -0.02036725598503     0.04209762958085     0.84869460261872
+   16     0.00360612811959    -0.01578002114243    -0.25968736976093     0.04681362095466    -0.07056181817438
+   17     0.01246830240999    -0.01477651464732     0.04560385652262    -0.13207643412099     0.02219089119593
+   18    -0.00672308817288     0.00928582087014    -0.07032463811984     0.02274257863967    -0.16102720038613
+   19    -0.00053646450356     0.00172322784192     0.00015774191425    -0.00085652632614     0.00040051468648
+   20    -0.00107749923486     0.00128542519602    -0.00181066996439     0.00122848677358    -0.00023544369124
+   21    -0.00011866678126     0.00027292979161    -0.00013839994029     0.00061837403900     0.00060027202842
+   22    -0.00031290509087    -0.00076948736223     0.00039974003067     0.00076704910538     0.00026021726912
+   23    -0.00091912635127    -0.00029144053514    -0.00097176750218    -0.00732692353208    -0.00313002853102
+   24    -0.00007119051117     0.00041944544369     0.00025361569232    -0.00344232502720    -0.00052037463675
+   25    -0.00134413434204     0.00173224198850    -0.00093732691608    -0.00044717311664     0.00002665209599
+   26     0.00011769904486     0.00060109438583    -0.00069680244189     0.00064728691537    -0.00016021278927
+   27     0.00057483653780     0.01791092481014     0.00042124745919    -0.00037077588815    -0.00020633182917
+   28     0.01330867837900    -0.00150173515046    -0.00115083847217     0.00317081193317     0.00045004539788
+   29    -0.01614860701651     0.00414062717997     0.00457491017839    -0.00474168372560    -0.00146375551554
+   30    -0.00022432833917     0.00378206769508     0.00024975707712     0.00044964092967     0.00087760263276
+   31     0.02406467126087     0.08950620867527    -0.00620578357554     0.00883499198804     0.03289997341633
+   32    -0.09546432730141    -0.09582155116434    -0.00684629989795     0.00662062372763     0.02943607532652
+   33    -0.08696919775143    -0.39643206082726    -0.00026474592725    -0.00285311359803    -0.00767527953330
+   34     0.04109593981517    -0.17790344195490    -0.02186297713653     0.00667251951946    -0.01839797604706
+   35    -0.07944894156516     0.03160972155815    -0.02212504352914     0.00545495959301    -0.01694469263554
+   36     0.02872750340253    -0.20701797770376     0.01716577644574    -0.00208170739084     0.01080219674856
+   37     0.00432760397658     0.03581041500834    -0.07583117844186     0.00412336872874     0.03112331843144
+   38     0.00380896012446     0.02893510335103     0.00375420895170    -0.08462160059581    -0.02768446113697
+   39    -0.00279045534622    -0.00674181061422     0.03235102955151    -0.02984693244233    -0.45094357995326
+   40    -0.03513301428145    -0.00805741823421    -0.08769333481569     0.07261079748195     0.01812667209750
+   41    -0.01814243247378    -0.00552261779563     0.07281883266356    -0.42122796895871    -0.08569561974974
+   42     0.01716953155512     0.00334076810040     0.01762261093024    -0.08358419338614    -0.10189622866875
+   43     0.00028189204848    -0.00003178914488     0.00486383238386    -0.00279334189986    -0.04369675614087
+   44    -0.00009976364111    -0.00070744545103    -0.00190461663560     0.00116893912025     0.01463811453627
+   45    -0.00009846485498     0.00119284202283     0.00346764016351    -0.00147557580591    -0.01325674197444
+   46     0.00380163099458    -0.00455575844713    -0.02369550905014    -0.02316043141222     0.01346257444718
+   47    -0.00138827524349     0.00244531081389     0.01379021017845     0.01073684920999    -0.00530405746581
+   48     0.00213374189498    -0.00164557307159    -0.01729797093449    -0.01401790861177     0.00728317195828
+
+                16                  17                  18                  19                  20
+
+    1    -0.12703139271516     0.04203670522345     0.01364906215717    -0.11750988997241     0.00519754388591
+    2     0.03936787278322    -0.28597701961378    -0.04757826815808     0.00669834868511    -0.07317709612985
+    3     0.01091738613865    -0.04768305327167    -0.13614614555249     0.12256375430083    -0.00245827775267
+    4     0.01342438793409    -0.00056898183766    -0.00101441458152    -0.01752970625137    -0.01199040409788
+    5    -0.03426999453036    -0.03058462333107     0.00562820179217     0.00073877093708     0.00317446187578
+    6    -0.00966527971406    -0.00499429266797     0.00253072471020     0.03421674891650     0.02587506758311
+    7     0.00334811849117     0.00427432067084    -0.00048767605267     0.00098245507252     0.00006611981122
+    8     0.00185559847903     0.00351794187688     0.00019916983521    -0.00416715791293    -0.00276306772225
+    9    -0.00089673588600    -0.00051862599950     0.00041139363652    -0.00017038739650    -0.00020481006068
+   10    -0.03527221810248    -0.02333812236320     0.01126764311576    -0.00009391732636     0.00014856186971
+   11     0.00360612811959     0.01246830240999    -0.00672308817288    -0.00053646450356    -0.00107749923486
+   12    -0.01578002114243    -0.01477651464732     0.00928582087014     0.00172322784192     0.00128542519602
+   13    -0.25968736976093     0.04560385652262    -0.07032463811984     0.00015774191425    -0.00181066996439
+   14     0.04681362095466    -0.13207643412099     0.02274257863967    -0.00085652632614     0.00122848677358
+   15    -0.07056181817438     0.02219089119593    -0.16102720038613     0.00040051468648    -0.00023544369124
+   16     0.78042753673964     0.07982143492320    -0.04600336273709    -0.00211126114311     0.01282423608631
+   17     0.07982143492320     0.74795866283956    -0.01548987593059    -0.00125970116405    -0.00020211986571
+   18    -0.04600336273709    -0.01548987593059     0.85338145017885     0.00787684799762    -0.04429776895862
+   19    -0.00211126114311    -0.00125970116405     0.00787684799762     0.11917078462394    -0.00108308855590
+   20     0.01282423608631    -0.00020211986571    -0.04429776895862    -0.00108308855590     0.07490235414017
+   21     0.00050598303193     0.00191592367016    -0.00494705244582    -0.12644066993679     0.00764831551367
+   22    -0.00381399988020     0.00026081331385    -0.00379681623472     0.01517517009488    -0.00695093701012
+   23     0.03112260917646    -0.01115672641656     0.02547974167538    -0.00119583866247     0.00113345240897
+   24     0.01302335332512    -0.00737781211482     0.00936491098998    -0.03499275811499     0.01529778683143
+   25    -0.00622474433327    -0.00189864248372     0.00156316409653     0.00053988293789     0.00063510449718
+   26    -0.00335921100775     0.00040238509074     0.00099239651527     0.00013104307487     0.00027108907454
+   27     0.00033032056888    -0.00042869761881     0.00080743913763    -0.00076566778033    -0.00103614349869
+   28     0.00023029236614     0.00079031109014     0.00005330293286    -0.00040396607041    -0.00024727629631
+   29     0.00107211572655    -0.00049570797794     0.00010437598733     0.00047417407029     0.00056284825803
+   30     0.00047526686778     0.00003444003277    -0.00023095205293    -0.00285706482604    -0.00210955552336
+   31     0.00185226785692     0.00038994661220     0.00040396192731    -0.00011376075815     0.00002382184785
+   32     0.00128286136852    -0.00049755541990    -0.00001439899730     0.00046799132467     0.00053541165961
+   33    -0.00061097278817    -0.00033445038525     0.00063178765217    -0.00017989379074    -0.00004682802875
+   34    -0.00230402259672    -0.00436108437354     0.00248316163371     0.00009003603612     0.00012785652980
+   35    -0.00262000808281    -0.00414063156452     0.00262734477599     0.00016593427557     0.00025855582843
+   36     0.00254720918402     0.00291990787392    -0.00100290839219    -0.00009486492710    -0.00002220549030
+   37     0.00477396314774    -0.00388094294303    -0.04375247782441     0.00000543629526     0.00037194947169
+   38    -0.00105736732738     0.00123082218185     0.01434871582471     0.00015730143671     0.00009321467138
+   39     0.00328970094190    -0.00189880412668    -0.01322875479012    -0.00010079846470     0.00027775954381
+   40    -0.00595933162852     0.03773762626432     0.01157531256147     0.00027502287207     0.00003623181619
+   41    -0.00106521080345    -0.00553347453973    -0.00317100954294    -0.00000196464068     0.00008796054738
+   42    -0.00466703537529     0.02168896359566     0.00581731609624    -0.00010816584341     0.00017103826807
+   43    -0.08111083664725    -0.00301361759145     0.03291153863800     0.00057783256881     0.00271286687067
+   44    -0.00250675550512    -0.07888197998018    -0.02352363857458     0.00085391939751    -0.00797872218349
+   45     0.03517806829374    -0.02256147892911    -0.45140353060826    -0.00015807603740    -0.00058748463125
+   46    -0.28054138631426    -0.17259392270059     0.08359539098361     0.00078813868190    -0.00006191680491
+   47    -0.17288792955088    -0.21603184198819     0.06867552391337    -0.00058674130033     0.00295067011855
+   48     0.08191793743151     0.06731347986125    -0.11424429886144    -0.00091274678181     0.00044312470046
+
+                21                  22                  23                  24                  25
+
+    1     0.11355984410256    -0.27463644651329     0.09438881350871    -0.16068415431073     0.00883671523404
+    2    -0.00662794141029     0.09538390193911    -0.11681241132269     0.07595619856137    -0.03298217922016
+    3    -0.40331165040970    -0.16533705201865     0.07589161150447    -0.21056598419255    -0.00153077754145
+    4     0.00024347366396    -0.02604819154066    -0.02394312595724     0.00824872526398    -0.09329567882689
+    5    -0.00019289831583     0.01290988721817     0.01175859096774    -0.00219672549065     0.06926648902588
+    6     0.00518660103431    -0.01923720176768    -0.01845565885577     0.00649973624489     0.00310360763427
+    7    -0.00176486949221    -0.00021801508482    -0.00205218181054     0.00062034370440    -0.00291759940177
+    8    -0.00017559965820    -0.00461643157622    -0.00460261353152     0.00106117477611     0.04345117531749
+    9    -0.00027415060244    -0.00053817489474     0.00030767627209    -0.00050424765385     0.00053081559482
+   10    -0.00010827990761     0.00057252459534    -0.00041517352113    -0.00020164144028    -0.00507142333632
+   11    -0.00011866678126    -0.00031290509087    -0.00091912635127    -0.00007119051117    -0.00134413434204
+   12     0.00027292979161    -0.00076948736223    -0.00029144053514     0.00041944544369     0.00173224198850
+   13    -0.00013839994029     0.00039974003067    -0.00097176750218     0.00025361569232    -0.00093732691608
+   14     0.00061837403900     0.00076704910538    -0.00732692353208    -0.00344232502720    -0.00044717311664
+   15     0.00060027202842     0.00026021726912    -0.00313002853102    -0.00052037463675     0.00002665209599
+   16     0.00050598303193    -0.00381399988020     0.03112260917646     0.01302335332512    -0.00622474433327
+   17     0.00191592367016     0.00026081331385    -0.01115672641656    -0.00737781211482    -0.00189864248372
+   18    -0.00494705244582    -0.00379681623472     0.02547974167538     0.00936491098998     0.00156316409653
+   19    -0.12644066993679     0.01517517009488    -0.00119583866247    -0.03499275811499     0.00053988293789
+   20     0.00764831551367    -0.00695093701012     0.00113345240897     0.01529778683143     0.00063510449718
+   21     0.41932965919781     0.01444825560820    -0.00320238079886    -0.01874492499202    -0.00019687642526
+   22     0.01444825560820     0.28570473673600    -0.09826119189368     0.17219616721049     0.00228737481908
+   23    -0.00320238079886    -0.09826119189368     0.12088780775461    -0.07971014277494     0.00082311963191
+   24    -0.01874492499202     0.17219616721049    -0.07971014277494     0.21241580104561    -0.00004547836344
+   25    -0.00019687642526     0.00228737481908     0.00082311963191    -0.00004547836344     0.09337427539482
+   26     0.00010817818020     0.00104527919534     0.00133635069481    -0.00015101034668    -0.07779906807150
+   27     0.00007368111642     0.00081767300729    -0.00008979988600     0.00037246554571    -0.00354826109016
+   28    -0.00018482262150    -0.00045186149865    -0.00046846941180     0.00029703416881     0.00204620039303
+   29     0.00011459598069     0.00058678603318     0.00090311629861    -0.00012442440844    -0.00008269821745
+   30    -0.00031227812877     0.00203525440405     0.00190986189221    -0.00056457473271    -0.00107786775600
+   31    -0.00011171985730     0.00000972275543     0.00002169025936    -0.00006269669909    -0.00017816448017
+   32     0.00010067861486     0.00006626131768     0.00033995034444     0.00005168455978     0.00086607073748
+   33     0.00003106745449    -0.00000315746148    -0.00003838250816     0.00001874803860    -0.00028117495221
+   34     0.00001036642741     0.00002854180357     0.00014556469491     0.00003237144889     0.00001904433435
+   35     0.00001125881532     0.00011338274933     0.00035832381788     0.00002877860375     0.00112079750811
+   36     0.00001983012644    -0.00000161727426    -0.00007385829505    -0.00003425904612     0.00021836592776
+   37     0.00016491246146     0.00012339634266    -0.00021478694869     0.00011240877510     0.00023564593937
+   38    -0.00000799912056    -0.00004729255285     0.00014390619798    -0.00003385663380     0.00005629115375
+   39     0.00016373542891     0.00008899327924    -0.00025692359436     0.00012218399856    -0.00000374168518
+   40    -0.00009589537507    -0.00011121444883     0.00214914211619     0.00071320880361     0.00035987487518
+   41     0.00002985672033     0.00001933832490    -0.00012546791784    -0.00003785557401     0.00007485776291
+   42    -0.00000613717167    -0.00004506923861     0.00083874174868     0.00051487919650     0.00000254793959
+   43     0.00041331112520     0.00056914608991    -0.00068070425983     0.00045464349347     0.00007349083250
+   44    -0.00096636556977    -0.00097123533859     0.00276596515224     0.00051767322813    -0.00004115908458
+   45     0.00091088451995    -0.00021954871157     0.00066457438572     0.00130384105390     0.00007978991366
+   46    -0.00030461203797     0.00040937538513    -0.00044769932219     0.00003485650649     0.00085243268945
+   47     0.00074467025022     0.00000729451367     0.00131580553366     0.00023204636433    -0.00169885067794
+   48     0.00100753308543     0.00010156419011     0.00015640837639    -0.00009764629002    -0.00057300741050
+
+                26                  27                  28                  29                  30
+
+    1     0.00922934812130    -0.00197558551088    -0.00248524574124     0.00198972917395     0.00193335623138
+    2    -0.01306848400354     0.00320778955842     0.00347427222263    -0.00254812787363    -0.00059635379779
+    3    -0.00137552541841     0.00385940931953     0.00125032973291    -0.00014400756297     0.01799057797439
+    4     0.07644762923918     0.00374150892385    -0.02128344417673     0.01987141511628     0.00153542095151
+    5    -0.45403009885200    -0.00290396359552    -0.02997801226197     0.01425202506259     0.00253121509515
+    6    -0.00363713212516    -0.05465082587718     0.00306681827754    -0.00145692039357     0.00840268419692
+    7    -0.00646420181352     0.00038832821727    -0.29946003052849    -0.19503026321121     0.02445198613908
+    8    -0.00429459759656    -0.00309833327515    -0.18789625104555    -0.24581786020186     0.01803886269040
+    9     0.00031480358388     0.00858350412060     0.02389470756635     0.01918257984830    -0.05669862708703
+   10     0.00019528997468     0.00244247609682     0.01199415805611    -0.02892792363586    -0.00169262769733
+   11     0.00011769904486     0.00057483653780     0.01330867837900    -0.01614860701651    -0.00022432833917
+   12     0.00060109438583     0.01791092481014    -0.00150173515046     0.00414062717997     0.00378206769508
+   13    -0.00069680244189     0.00042124745919    -0.00115083847217     0.00457491017839     0.00024975707712
+   14     0.00064728691537    -0.00037077588815     0.00317081193317    -0.00474168372560     0.00044964092967
+   15    -0.00016021278927    -0.00020633182917     0.00045004539788    -0.00146375551554     0.00087760263276
+   16    -0.00335921100775     0.00033032056888     0.00023029236614     0.00107211572655     0.00047526686778
+   17     0.00040238509074    -0.00042869761881     0.00079031109014    -0.00049570797794     0.00003444003277
+   18     0.00099239651527     0.00080743913763     0.00005330293286     0.00010437598733    -0.00023095205293
+   19     0.00013104307487    -0.00076566778033    -0.00040396607041     0.00047417407029    -0.00285706482604
+   20     0.00027108907454    -0.00103614349869    -0.00024727629631     0.00056284825803    -0.00210955552336
+   21     0.00010817818020     0.00007368111642    -0.00018482262150     0.00011459598069    -0.00031227812877
+   22     0.00104527919534     0.00081767300729    -0.00045186149865     0.00058678603318     0.00203525440405
+   23     0.00133635069481    -0.00008979988600    -0.00046846941180     0.00090311629861     0.00190986189221
+   24    -0.00015101034668     0.00037246554571     0.00029703416881    -0.00012442440844    -0.00056457473271
+   25    -0.07779906807150    -0.00354826109016     0.00204620039303    -0.00008269821745    -0.00107786775600
+   26     0.46643660639708     0.00382308270323     0.00014631815072     0.00224793959841    -0.00010411630576
+   27     0.00382308270323     0.03582662983593    -0.00113172979824    -0.00023464037062    -0.01166358049477
+   28     0.00014631815072    -0.00113172979824     0.30893569315385     0.19854717665067    -0.02579915411164
+   29     0.00224793959841    -0.00023464037062     0.19854717665067     0.24860684934694    -0.02066659103810
+   30    -0.00010411630576    -0.01166358049477    -0.02579915411164    -0.02066659103810     0.03809493966313
+   31     0.00001229180823    -0.00096703284292     0.00006274294531     0.00003040981912     0.00002978264738
+   32     0.00054578005521     0.00334019563712    -0.00045988445531     0.00083402960002     0.00124576169135
+   33    -0.00003750786823    -0.00052101097013    -0.00018964815267    -0.00001857084567    -0.00001211958291
+   34     0.00014164114684     0.00041127088783     0.00104156188391    -0.00074814788142     0.00073895004806
+   35     0.00024308868082    -0.00284276488152    -0.00058588723856     0.00257137033801    -0.00057336908806
+   36    -0.00014511149686    -0.00037545253016     0.00008206993025     0.00000999236594     0.00038325913257
+   37     0.00013225938535     0.00004740339239     0.00001825012900    -0.00012159858789    -0.00015868092085
+   38     0.00003388337124    -0.00004329790973    -0.00000747598168    -0.00000393590013    -0.00015006722513
+   39     0.00000426299570    -0.00004924045512     0.00003085539513    -0.00008711260690     0.00002645229178
+   40     0.00029229452211    -0.00013901193032     0.00077956643647    -0.00176601851371     0.00010060283693
+   41     0.00003207267424    -0.00008523428442     0.00037957718488    -0.00076702764899     0.00009600290465
+   42    -0.00001794662408    -0.00002016510611    -0.00033306378357     0.00066428286540     0.00000416993519
+   43     0.00006082728363    -0.00003866790612     0.00006959711844    -0.00015426418993     0.00007216696704
+   44    -0.00003906938992     0.00022161563510    -0.00008325781372     0.00020072007321    -0.00001065149138
+   45     0.00005286092796     0.00000634498585    -0.00000258892372    -0.00001496398560    -0.00005002827137
+   46     0.00048506182440    -0.00003427173648     0.00005732377829    -0.00031580294893    -0.00003714887528
+   47    -0.00088193264891    -0.00003386889967    -0.00009063184851     0.00034405194388     0.00012924763949
+   48    -0.00026811630208     0.00004620842980     0.00001757907407    -0.00000546740292    -0.00002959314970
+
+                31                  32                  33                  34                  35
+
+    1    -0.00026273131529    -0.00081917546999     0.00005815469902     0.00035015998346    -0.00057145166243
+    2    -0.00004108194287    -0.00102196293362     0.00025262473316    -0.00070808843190    -0.00064011004915
+    3     0.00058863222435    -0.00196285043156     0.00038621270970    -0.00037795793186     0.00079200501137
+    4     0.00152608003303    -0.00350407697495    -0.00108495287253     0.00134155347047    -0.00259050113827
+    5     0.00083042013202    -0.00321474295591     0.00141196362105    -0.00009670516017    -0.00622874827629
+    6    -0.00011108462603     0.00055891958708    -0.00036610381460    -0.00065317588669     0.00055545774728
+    7    -0.00399393898122     0.01677251413490    -0.00064998919991    -0.00635173969691     0.03921233243509
+    8     0.00583984212087    -0.01295281606071     0.00114116482651     0.00091982921658    -0.00621132627977
+    9     0.01096664293006    -0.04058753928848     0.00777810110117    -0.00362049352791     0.02633876215977
+   10    -0.10210230105999     0.02502830053399     0.08487840640357    -0.31554798068951     0.04241425800532
+   11     0.02406467126087    -0.09546432730141    -0.08696919775143     0.04109593981517    -0.07944894156516
+   12     0.08950620867527    -0.09582155116434    -0.39643206082726    -0.17790344195490     0.03160972155815
+   13    -0.00620578357554    -0.00684629989795    -0.00026474592725    -0.02186297713653    -0.02212504352914
+   14     0.00883499198804     0.00662062372763    -0.00285311359803     0.00667251951946     0.00545495959301
+   15     0.03289997341633     0.02943607532652    -0.00767527953330    -0.01839797604706    -0.01694469263554
+   16     0.00185226785692     0.00128286136852    -0.00061097278817    -0.00230402259672    -0.00262000808281
+   17     0.00038994661220    -0.00049755541990    -0.00033445038525    -0.00436108437354    -0.00414063156452
+   18     0.00040396192731    -0.00001439899730     0.00063178765217     0.00248316163371     0.00262734477599
+   19    -0.00011376075815     0.00046799132467    -0.00017989379074     0.00009003603612     0.00016593427557
+   20     0.00002382184785     0.00053541165961    -0.00004682802875     0.00012785652980     0.00025855582843
+   21    -0.00011171985730     0.00010067861486     0.00003106745449     0.00001036642741     0.00001125881532
+   22     0.00000972275543     0.00006626131768    -0.00000315746148     0.00002854180357     0.00011338274933
+   23     0.00002169025936     0.00033995034444    -0.00003838250816     0.00014556469491     0.00035832381788
+   24    -0.00006269669909     0.00005168455978     0.00001874803860     0.00003237144889     0.00002877860375
+   25    -0.00017816448017     0.00086607073748    -0.00028117495221     0.00001904433435     0.00112079750811
+   26     0.00001229180823     0.00054578005521    -0.00003750786823     0.00014164114684     0.00024308868082
+   27    -0.00096703284292     0.00334019563712    -0.00052101097013     0.00041127088783    -0.00284276488152
+   28     0.00006274294531    -0.00045988445531    -0.00018964815267     0.00104156188391    -0.00058588723856
+   29     0.00003040981912     0.00083402960002    -0.00001857084567    -0.00074814788142     0.00257137033801
+   30     0.00002978264738     0.00124576169135    -0.00001211958291     0.00073895004806    -0.00057336908806
+   31     0.09867175002080    -0.02621269111277    -0.09514491749366     0.01324143295014    -0.01146807060940
+   32    -0.02621269111277     0.10231183798987     0.09479043205885    -0.00180112186979     0.00260903886792
+   33    -0.09514491749366     0.09479043205885     0.41241928517831     0.01275641811897    -0.00759487950955
+   34     0.01324143295014    -0.00180112186979     0.01275641811897     0.32770935019795    -0.04371229378877
+   35    -0.01146807060940     0.00260903886792    -0.00759487950955    -0.04371229378877     0.08251491590098
+   36    -0.03707294879336     0.00800565285888    -0.01828678164405     0.18561616160540    -0.03287363250609
+   37    -0.00434366699440    -0.00541275076691     0.00143127675571     0.00218383283984     0.00111167690405
+   38    -0.00360834390042    -0.00291612307712     0.00086540522069     0.00135038890332     0.00105861179632
+   39     0.00061855749513     0.00096198263754     0.00076978301022    -0.00069937360754    -0.00039863442159
+   40     0.00187591927455     0.00081750728101    -0.00077808249472     0.00096055008973     0.00070461978827
+   41     0.00130535755017     0.00180046636665    -0.00048743685954     0.00025741297353     0.00072752147740
+   42    -0.00110823292628     0.00013642260661     0.00106995851736    -0.00005970255474    -0.00026118136655
+   43    -0.00022051183135    -0.00012326007564     0.00015345093880     0.00026620273840     0.00013666469553
+   44     0.00006517727347     0.00029822029379    -0.00010624733429    -0.00002661786148     0.00001699321479
+   45    -0.00024597919712    -0.00016352096300     0.00018467777099     0.00022691815979     0.00015196203165
+   46     0.00018094334695    -0.00012224600826    -0.00009017188294    -0.00116554611941    -0.00130641031205
+   47    -0.00008843323810     0.00017216918715     0.00002502369580     0.00074290693712     0.00085637831756
+   48    -0.00018914694265    -0.00007794471287     0.00000373495501    -0.00056349682701    -0.00062613627754
+
+                36                  37                  38                  39                  40
+
+    1    -0.00007375478672     0.00159097303682    -0.00069304269420     0.00125626477112    -0.00664177067857
+    2     0.00027218859938    -0.00155350386512     0.00072595052915    -0.00075091074734    -0.00022641741860
+    3     0.00036278790675     0.00051019216039     0.00062722853238     0.00116467346205    -0.00497303130928
+    4    -0.00002395976198    -0.00034356078834    -0.00017099251490    -0.00008514039348    -0.00086433329113
+    5    -0.00081214718406    -0.00019342023724    -0.00018208220877     0.00012625680990    -0.00086375373312
+    6    -0.00043766778874     0.00024051728281    -0.00013166920962     0.00003591906428     0.00000228158849
+    7     0.00542336281312     0.00034801999227     0.00024464890810    -0.00047664547399    -0.00580385774657
+    8    -0.00246863813520     0.00139607895787     0.00146021274926    -0.00055786969676    -0.00189987880071
+    9     0.00477318896184    -0.00068198441718     0.00003967099377     0.00053774420786     0.00218767623100
+   10    -0.17435397049145    -0.00408780226906    -0.00268593320340    -0.00115937503867     0.00854614936071
+   11     0.02872750340253     0.00432760397658     0.00380896012446    -0.00279045534622    -0.03513301428145
+   12    -0.20701797770376     0.03581041500834     0.02893510335103    -0.00674181061422    -0.00805741823421
+   13     0.01716577644574    -0.07583117844186     0.00375420895170     0.03235102955151    -0.08769333481569
+   14    -0.00208170739084     0.00412336872874    -0.08462160059581    -0.02984693244233     0.07261079748195
+   15     0.01080219674856     0.03112331843144    -0.02768446113697    -0.45094357995326     0.01812667209750
+   16     0.00254720918402     0.00477396314774    -0.00105736732738     0.00328970094190    -0.00595933162852
+   17     0.00291990787392    -0.00388094294303     0.00123082218185    -0.00189880412668     0.03773762626432
+   18    -0.00100290839219    -0.04375247782441     0.01434871582471    -0.01322875479012     0.01157531256147
+   19    -0.00009486492710     0.00000543629526     0.00015730143671    -0.00010079846470     0.00027502287207
+   20    -0.00002220549030     0.00037194947169     0.00009321467138     0.00027775954381     0.00003623181619
+   21     0.00001983012644     0.00016491246146    -0.00000799912056     0.00016373542891    -0.00009589537507
+   22    -0.00000161727426     0.00012339634266    -0.00004729255285     0.00008899327924    -0.00011121444883
+   23    -0.00007385829505    -0.00021478694869     0.00014390619798    -0.00025692359436     0.00214914211619
+   24    -0.00003425904612     0.00011240877510    -0.00003385663380     0.00012218399856     0.00071320880361
+   25     0.00021836592776     0.00023564593937     0.00005629115375    -0.00000374168518     0.00035987487518
+   26    -0.00014511149686     0.00013225938535     0.00003388337124     0.00000426299570     0.00029229452211
+   27    -0.00037545253016     0.00004740339239    -0.00004329790973    -0.00004924045512    -0.00013901193032
+   28     0.00008206993025     0.00001825012900    -0.00000747598168     0.00003085539513     0.00077956643647
+   29     0.00000999236594    -0.00012159858789    -0.00000393590013    -0.00008711260690    -0.00176601851371
+   30     0.00038325913257    -0.00015868092085    -0.00015006722513     0.00002645229178     0.00010060283693
+   31    -0.03707294879336    -0.00434366699440    -0.00360834390042     0.00061855749513     0.00187591927455
+   32     0.00800565285888    -0.00541275076691    -0.00291612307712     0.00096198263754     0.00081750728101
+   33    -0.01828678164405     0.00143127675571     0.00086540522069     0.00076978301022    -0.00077808249472
+   34     0.18561616160540     0.00218383283984     0.00135038890332    -0.00069937360754     0.00096055008973
+   35    -0.03287363250609     0.00111167690405     0.00105861179632    -0.00039863442159     0.00070461978827
+   36     0.20878415468902    -0.00005857065185    -0.00070345143426     0.00139650976502    -0.00019060846392
+   37    -0.00005857065185     0.08098345176064    -0.00188441738964    -0.03238842467759    -0.00038344847068
+   38    -0.00070345143426    -0.00188441738964     0.07576780725986     0.02887723729184     0.00224899690757
+   39     0.00139650976502    -0.03238842467759     0.02887723729184     0.46850429804218    -0.00099556594906
+   40    -0.00019060846392    -0.00038344847068     0.00224899690757    -0.00099556594906     0.09097002075197
+   41    -0.00026893577074    -0.00099537004944     0.00314082061512     0.00598094981097    -0.07549150342578
+   42    -0.00006053552225     0.00885550661472    -0.04521842825591    -0.00329027142417    -0.01904474869062
+   43     0.00009665342189    -0.00733740120419     0.00253374084217    -0.00227599783405     0.00159744161295
+   44    -0.00003440264080     0.00305656926527     0.00012660241518     0.00063295741644    -0.00087502769020
+   45     0.00010629045253    -0.00221765890719     0.00086276230247     0.00044939613592     0.00065275815696
+   46     0.00072069584297     0.00206408878688    -0.00019071164699     0.00054966182086     0.00209274588041
+   47    -0.00045115458639    -0.00026271600415     0.00013294998899    -0.00027376355850    -0.00034160254409
+   48     0.00058736489696     0.00096184651123    -0.00058289256591     0.00108296187606     0.00091585015694
+
+                41                  42                  43                  44                  45
+
+    1     0.00047284964849    -0.00367729721059    -0.00163734002241     0.00607760546727     0.00024683205298
+    2     0.00107832792911     0.00003715404433     0.00091886445020    -0.00136910871726     0.00251248398526
+    3     0.00067131346732    -0.00149687818054     0.01034579235563    -0.04538181197020    -0.00401420040523
+    4    -0.00041409228194     0.00020254690619    -0.00004206320996     0.00091793968833    -0.00008465538915
+    5     0.00051926795803    -0.00039339454451    -0.00025919605043     0.00190736442006     0.00064284800294
+    6    -0.00002632936121    -0.00004043959319    -0.00053177325066     0.00026944252582     0.00048067936373
+    7    -0.00334391736876     0.00290321392991    -0.00010300300788     0.00010061730896    -0.00014881537930
+    8    -0.00034662110420     0.00160953164750     0.00015214337696    -0.00042409339694    -0.00001838893423
+    9     0.00101723339829    -0.00003804840596     0.00026399928274    -0.00001413802504     0.00003736294966
+   10     0.00714768880208    -0.00250831399307     0.00238852766327    -0.00049033575056     0.00146122017502
+   11    -0.01814243247378     0.01716953155512     0.00028189204848    -0.00009976364111    -0.00009846485498
+   12    -0.00552261779563     0.00334076810040    -0.00003178914488    -0.00070744545103     0.00119284202283
+   13     0.07281883266356     0.01762261093024     0.00486383238386    -0.00190461663560     0.00346764016351
+   14    -0.42122796895871    -0.08358419338614    -0.00279334189986     0.00116893912025    -0.00147557580591
+   15    -0.08569561974974    -0.10189622866875    -0.04369675614087     0.01463811453627    -0.01325674197444
+   16    -0.00106521080345    -0.00466703537529    -0.08111083664725    -0.00250675550512     0.03517806829374
+   17    -0.00553347453973     0.02168896359566    -0.00301361759145    -0.07888197998018    -0.02256147892911
+   18    -0.00317100954294     0.00581731609624     0.03291153863800    -0.02352363857458    -0.45140353060826
+   19    -0.00000196464068    -0.00010816584341     0.00057783256881     0.00085391939751    -0.00015807603740
+   20     0.00008796054738     0.00017103826807     0.00271286687067    -0.00797872218349    -0.00058748463125
+   21     0.00002985672033    -0.00000613717167     0.00041331112520    -0.00096636556977     0.00091088451995
+   22     0.00001933832490    -0.00004506923861     0.00056914608991    -0.00097123533859    -0.00021954871157
+   23    -0.00012546791784     0.00083874174868    -0.00068070425983     0.00276596515224     0.00066457438572
+   24    -0.00003785557401     0.00051487919650     0.00045464349347     0.00051767322813     0.00130384105390
+   25     0.00007485776291     0.00000254793959     0.00007349083250    -0.00004115908458     0.00007978991366
+   26     0.00003207267424    -0.00001794662408     0.00006082728363    -0.00003906938992     0.00005286092796
+   27    -0.00008523428442    -0.00002016510611    -0.00003866790612     0.00022161563510     0.00000634498585
+   28     0.00037957718488    -0.00033306378357     0.00006959711844    -0.00008325781372    -0.00000258892372
+   29    -0.00076702764899     0.00066428286540    -0.00015426418993     0.00020072007321    -0.00001496398560
+   30     0.00009600290465     0.00000416993519     0.00007216696704    -0.00001065149138    -0.00005002827137
+   31     0.00130535755017    -0.00110823292628    -0.00022051183135     0.00006517727347    -0.00024597919712
+   32     0.00180046636665     0.00013642260661    -0.00012326007564     0.00029822029379    -0.00016352096300
+   33    -0.00048743685954     0.00106995851736     0.00015345093880    -0.00010624733429     0.00018467777099
+   34     0.00025741297353    -0.00005970255474     0.00026620273840    -0.00002661786148     0.00022691815979
+   35     0.00072752147740    -0.00026118136655     0.00013666469553     0.00001699321479     0.00015196203165
+   36    -0.00026893577074    -0.00006053552225     0.00009665342189    -0.00003440264080     0.00010629045253
+   37    -0.00099537004944     0.00885550661472    -0.00733740120419     0.00305656926527    -0.00221765890719
+   38     0.00314082061512    -0.04521842825591     0.00253374084217     0.00012660241518     0.00086276230247
+   39     0.00598094981097    -0.00329027142417    -0.00227599783405     0.00063295741644     0.00044939613592
+   40    -0.07549150342578    -0.01904474869062     0.00159744161295    -0.00087502769020     0.00065275815696
+   41     0.43709507843045     0.08772119208024    -0.00076673279811     0.00062819258678    -0.00007165485695
+   42     0.08772119208024     0.09466131856788     0.00116154387594    -0.00007889222787     0.00105436763043
+   43    -0.00076673279811     0.00116154387594     0.07897792994316    -0.00451285187992    -0.03363786792041
+   44     0.00062819258678    -0.00007889222787    -0.00451285187992     0.07746027307760     0.02487172244787
+   45    -0.00007165485695     0.00105436763043    -0.03363786792041     0.02487172244787     0.46881733401965
+   46    -0.00039712362971     0.00080365935067     0.00106715497352     0.00034002889908    -0.00459803672378
+   47     0.00103328393036    -0.00048282192721     0.00550696923860     0.00421946710609    -0.00476768080868
+   48    -0.00014985450189     0.00038592601082     0.03433975207483     0.02967206749809    -0.00581951960239
+
+                46                  47                  48
+
+    1     0.01167156798022    -0.03121175905526    -0.01054937240463
+    2     0.01110975773359    -0.02167961902286    -0.01049975320915
+    3    -0.00396442901227     0.01183657633492     0.00375254252226
+    4    -0.00114764986979     0.00404335869716     0.00104861218342
+    5     0.00256727321789    -0.00529616390236    -0.00274690911190
+    6     0.00095102129094    -0.00187529893233     0.00025528919642
+    7     0.00028618291466     0.00062957173411     0.00035001799430
+    8     0.00105501603833    -0.00060683661088     0.00019998980644
+    9    -0.00006438744959     0.00004407657206    -0.00006484809547
+   10    -0.00402647392739     0.00321085624169    -0.00309837430225
+   11     0.00380163099458    -0.00138827524349     0.00213374189498
+   12    -0.00455575844713     0.00244531081389    -0.00164557307159
+   13    -0.02369550905014     0.01379021017845    -0.01729797093449
+   14    -0.02316043141222     0.01073684920999    -0.01401790861177
+   15     0.01346257444718    -0.00530405746581     0.00728317195828
+   16    -0.28054138631426    -0.17288792955088     0.08191793743151
+   17    -0.17259392270059    -0.21603184198819     0.06731347986125
+   18     0.08359539098361     0.06867552391337    -0.11424429886144
+   19     0.00078813868190    -0.00058674130033    -0.00091274678181
+   20    -0.00006191680491     0.00295067011855     0.00044312470046
+   21    -0.00030461203797     0.00074467025022     0.00100753308543
+   22     0.00040937538513     0.00000729451367     0.00010156419011
+   23    -0.00044769932219     0.00131580553366     0.00015640837639
+   24     0.00003485650649     0.00023204636433    -0.00009764629002
+   25     0.00085243268945    -0.00169885067794    -0.00057300741050
+   26     0.00048506182440    -0.00088193264891    -0.00026811630208
+   27    -0.00003427173648    -0.00003386889967     0.00004620842980
+   28     0.00005732377829    -0.00009063184851     0.00001757907407
+   29    -0.00031580294893     0.00034405194388    -0.00000546740292
+   30    -0.00003714887528     0.00012924763949    -0.00002959314970
+   31     0.00018094334695    -0.00008843323810    -0.00018914694265
+   32    -0.00012224600826     0.00017216918715    -0.00007794471287
+   33    -0.00009017188294     0.00002502369580     0.00000373495501
+   34    -0.00116554611941     0.00074290693712    -0.00056349682701
+   35    -0.00130641031205     0.00085637831756    -0.00062613627754
+   36     0.00072069584297    -0.00045115458639     0.00058736489696
+   37     0.00206408878688    -0.00026271600415     0.00096184651123
+   38    -0.00019071164699     0.00013294998899    -0.00058289256591
+   39     0.00054966182086    -0.00027376355850     0.00108296187606
+   40     0.00209274588041    -0.00034160254409     0.00091585015694
+   41    -0.00039712362971     0.00103328393036    -0.00014985450189
+   42     0.00080365935067    -0.00048282192721     0.00038592601082
+   43     0.00106715497352     0.00550696923860     0.03433975207483
+   44     0.00034002889908     0.00421946710609     0.02967206749809
+   45    -0.00459803672378    -0.00476768080868    -0.00581951960239
+   46     0.29110661088920     0.17923749629128    -0.08646904413683
+   47     0.17923749629128     0.22412304422270    -0.07094382945285
+   48    -0.08646904413683    -0.07094382945285     0.10749674614084
+
+
+
+
+*** tstop() called on hpc-m36-1-1.local at Mon Feb 24 07:46:15 2025
+Module time:
+	user time   =      63.59 seconds =       1.06 minutes
+	system time =       0.43 seconds =       0.01 minutes
+	total time  =         64 seconds =       1.07 minutes
+Total time:
+	user time   =      91.44 seconds =       1.52 minutes
+	system time =       1.01 seconds =       0.02 minutes
+	total time  =         93 seconds =       1.55 minutes
+
+
+  ==> Harmonic Vibrational Analysis <==
+
+  non-mass-weighted Hessian:       Symmetric? True   Hermitian? True   Lin Dep Dim?  0 (0)
+  projection of translations (True) and rotations (True) removed 6 degrees of freedom (6)
+  total projector:                 Symmetric? True   Hermitian? True   Lin Dep Dim?  6 (6)
+  mass-weighted Hessian:           Symmetric? True   Hermitian? True   Lin Dep Dim?  0 (0)
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0000i [cm^-1]
+  pre-proj  low-frequency mode:    0.0066  [cm^-1]
+  pre-proj  low-frequency mode:    0.0155  [cm^-1]
+  pre-proj  low-frequency mode:    1.9197  [cm^-1]
+  pre-proj  low-frequency mode:    3.1509  [cm^-1]
+  pre-proj  all modes:['3.8887i' '0.0595i' '0.0066' '0.0155' '1.9197' '3.1509' '166.6803'
+ '298.7372' '447.1189' '519.0638' '566.5069' '766.8081' '855.6702'
+ '963.3173' '978.4350' '1046.2711' '1074.4393' '1117.3505' '1168.7012'
+ '1212.5232' '1236.1775' '1273.3116' '1312.9602' '1369.9447' '1377.1838'
+ '1473.0342' '1498.5261' '1524.7058' '1606.9421' '1673.5686' '1682.5522'
+ '1687.0427' '1696.4178' '1820.4885' '1820.9774' '1830.6813' '1842.4367'
+ '2097.4175' '3589.1328' '3589.4260' '3607.1941' '3610.5873' '3692.6330'
+ '3699.0680' '3699.2308' '3721.8266' '3723.4455' '3729.2010']
+  projected mass-weighted Hessian: Symmetric? True   Hermitian? True   Lin Dep Dim?  6 (6)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000i [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000  [cm^-1] (TR)
+  post-proj low-frequency mode:    0.0000  [cm^-1] (TR)
+  post-proj  all modes:['0.0000i' '0.0000i' '0.0000i' '0.0000i' '0.0000' '0.0000' '166.6802'
+ '298.7372' '447.1189' '519.0638' '566.5069' '766.8081' '855.6702'
+ '963.3173' '978.4350' '1046.2711' '1074.4393' '1117.3505' '1168.7012'
+ '1212.5232' '1236.1775' '1273.3116' '1312.9602' '1369.9447' '1377.1838'
+ '1473.0342' '1498.5260' '1524.7058' '1606.9421' '1673.5686' '1682.5522'
+ '1687.0427' '1696.4178' '1820.4885' '1820.9774' '1830.6813' '1842.4367'
+ '2097.4175' '3589.1328' '3589.4260' '3607.1941' '3610.5873' '3692.6330'
+ '3699.0680' '3699.2308' '3721.8266' '3723.4455' '3729.2010']
+
+  Vibration                       7                   8                   9           
+  Freq [cm^-1]                 166.6802            298.7372            447.1189       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.7972              1.7948              2.0803        
+  Force const [mDyne/A]         0.0294              0.0944              0.2450        
+  Turning point v=0 [a0]        0.6340              0.4739              0.3598        
+  RMS dev v=0 [a0 u^1/2]        0.6010              0.4489              0.3669        
+  IR activ [km/mol]             0.1224              0.0443              0.0002        
+  Char temp [K]                239.8157            429.8163            643.3046       
+  ----------------------------------------------------------------------------------
+      1   C                0.02 -0.01  0.14   -0.00  0.04 -0.05   -0.07  0.03 -0.04   
+      2   C               -0.02  0.01 -0.09    0.01  0.03 -0.07    0.00 -0.04  0.20   
+      3   C               -0.02 -0.00 -0.09    0.01  0.03  0.07   -0.03 -0.04 -0.19   
+      4   C                0.03  0.01  0.14    0.03  0.04  0.05    0.08 -0.01  0.03   
+      5   C               -0.03 -0.04 -0.06    0.04 -0.08 -0.13    0.02  0.02 -0.03   
+      6   C                0.00  0.04 -0.06   -0.08 -0.03  0.13   -0.01  0.03  0.02   
+      7   H                0.27 -0.12  0.24   -0.06  0.20 -0.08   -0.41  0.08 -0.17   
+      8   H               -0.15  0.01  0.37    0.04 -0.02 -0.15    0.17  0.07 -0.32   
+      9   H               -0.03  0.01 -0.27    0.00  0.03 -0.12    0.05 -0.03  0.33   
+     10   H               -0.03 -0.01 -0.27    0.02  0.03  0.12   -0.07 -0.01 -0.32   
+     11   H                0.29 -0.05  0.24    0.17  0.12  0.07    0.38 -0.18  0.17   
+     12   H               -0.12  0.11  0.37   -0.04  0.02  0.15   -0.08  0.18  0.31   
+     13   H               -0.10 -0.20 -0.06    0.14 -0.40 -0.10    0.03 -0.02 -0.02   
+     14   H               -0.01 -0.01 -0.19    0.04 -0.01 -0.43   -0.02  0.02 -0.05   
+     15   H                0.04  0.21 -0.07   -0.35 -0.22  0.12   -0.04  0.01  0.02   
+     16   H               -0.01  0.00 -0.19   -0.03  0.04  0.43    0.03  0.01  0.05   
+
+  Vibration                       10                  11                  12          
+  Freq [cm^-1]                 519.0638            566.5069            766.8081       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              2.3777              4.3349              1.4270        
+  Force const [mDyne/A]         0.3774              0.8197              0.4944        
+  Turning point v=0 [a0]        0.3123              0.2214              0.3317        
+  RMS dev v=0 [a0 u^1/2]        0.3406              0.3260              0.2802        
+  IR activ [km/mol]             0.9441              0.0001              8.1620        
+  Char temp [K]                746.8172            815.0773           1103.2661       
+  ----------------------------------------------------------------------------------
+      1   C                0.02 -0.09  0.01    0.24 -0.08 -0.05    0.05  0.03 -0.04   
+      2   C                0.06 -0.10  0.01    0.08  0.18  0.13   -0.04  0.10 -0.03   
+      3   C                0.11  0.04  0.01    0.04  0.18 -0.14   -0.10 -0.06 -0.03   
+      4   C                0.07  0.06  0.00   -0.24  0.08  0.05    0.02 -0.06 -0.03   
+      5   C               -0.07  0.17 -0.07   -0.10 -0.14  0.05    0.03 -0.02 -0.01   
+      6   C               -0.16 -0.10 -0.06   -0.01 -0.17 -0.04    0.03  0.00 -0.01   
+      7   H                0.17 -0.16  0.07    0.15 -0.17 -0.08    0.30 -0.06  0.06   
+      8   H               -0.04  0.08  0.18    0.26 -0.04 -0.05   -0.16 -0.03  0.19   
+      9   H               -0.01 -0.12  0.08   -0.11  0.14  0.25    0.05  0.12  0.47   
+     10   H                0.06  0.11  0.07    0.16  0.03 -0.26   -0.02 -0.09  0.48   
+     11   H                0.24  0.02  0.06   -0.22 -0.04  0.09    0.27 -0.13  0.06   
+     12   H               -0.07 -0.03  0.18   -0.23  0.13  0.04   -0.10  0.14  0.18   
+     13   H               -0.17  0.45 -0.09   -0.19 -0.25  0.05    0.02  0.19 -0.03   
+     14   H                0.00  0.12  0.25    0.13 -0.07 -0.04   -0.03 -0.08  0.19   
+     15   H               -0.41 -0.26 -0.06   -0.01 -0.32 -0.03   -0.10 -0.16 -0.01   
+     16   H               -0.06 -0.08  0.26   -0.15  0.03  0.04    0.03  0.10  0.18   
+
+  Vibration                       13                  14                  15          
+  Freq [cm^-1]                 855.6702            963.3173            978.4350       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.5035              2.4412              1.6553        
+  Force const [mDyne/A]         0.6486              1.3347              0.9336        
+  Turning point v=0 [a0]        0.3059              0.2263              0.2727        
+  RMS dev v=0 [a0 u^1/2]        0.2652              0.2500              0.2480        
+  IR activ [km/mol]             4.1697              0.2854              0.5016        
+  Char temp [K]               1231.1189           1385.9992           1407.7502       
+  ----------------------------------------------------------------------------------
+      1   C               -0.04 -0.03 -0.01    0.11 -0.04 -0.07   -0.10  0.05 -0.07   
+      2   C                0.03 -0.10 -0.07   -0.02 -0.13  0.02   -0.00  0.03  0.04   
+      3   C                0.08  0.06 -0.08   -0.07 -0.12 -0.01    0.02  0.02 -0.04   
+      4   C               -0.02  0.05 -0.01   -0.11  0.04  0.07    0.11 -0.02  0.06   
+      5   C               -0.03  0.01  0.05   -0.02  0.16 -0.02    0.03 -0.03  0.09   
+      6   C               -0.03  0.02  0.05    0.11  0.12  0.01   -0.05 -0.01 -0.08   
+      7   H                0.07  0.12  0.03    0.23 -0.21 -0.02    0.20 -0.24  0.06   
+      8   H               -0.08 -0.04  0.03    0.04 -0.00  0.06   -0.30  0.22  0.28   
+      9   H               -0.00 -0.11  0.52   -0.00 -0.14  0.06    0.08  0.05  0.10   
+     10   H                0.08  0.13  0.51   -0.09 -0.12 -0.05   -0.04  0.09 -0.10   
+     11   H               -0.02 -0.13  0.04   -0.31 -0.02  0.03   -0.31 -0.07 -0.04   
+     12   H               -0.04  0.08  0.02   -0.03  0.02 -0.07    0.37 -0.03 -0.28   
+     13   H                0.06 -0.29  0.08   -0.06 -0.23 -0.00   -0.08 -0.31  0.10   
+     14   H               -0.02  0.08 -0.25   -0.04  0.27 -0.42    0.04  0.02 -0.15   
+     15   H                0.23  0.19  0.06   -0.09 -0.22  0.02   -0.13 -0.30 -0.08   
+     16   H               -0.07 -0.07 -0.25    0.20  0.22  0.40   -0.02  0.04  0.14   
+
+  Vibration                       16                  17                  18          
+  Freq [cm^-1]                1046.2711           1074.4393           1117.3505       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              2.2040              2.2063              1.3794        
+  Force const [mDyne/A]         1.4215              1.5006              1.0146        
+  Turning point v=0 [a0]        0.2285              0.2254              0.2795        
+  RMS dev v=0 [a0 u^1/2]        0.2399              0.2367              0.2321        
+  IR activ [km/mol]             0.8209              0.2120              0.9205        
+  Char temp [K]               1505.3512           1545.8789           1607.6185       
+  ----------------------------------------------------------------------------------
+      1   C                0.15 -0.05 -0.02    0.10  0.10 -0.01    0.00 -0.01 -0.10   
+      2   C               -0.10 -0.08  0.01    0.00 -0.13 -0.00    0.01  0.00  0.06   
+      3   C               -0.03  0.12 -0.00   -0.08 -0.10  0.01    0.00 -0.00  0.06   
+      4   C                0.14 -0.05 -0.02   -0.02  0.14 -0.00    0.00 -0.00 -0.10   
+      5   C               -0.08 -0.09  0.03    0.08 -0.09  0.06   -0.03  0.03  0.05   
+      6   C               -0.01  0.12  0.02   -0.11 -0.02 -0.05   -0.04 -0.00  0.05   
+      7   H                0.07 -0.02 -0.06    0.16  0.23  0.01    0.26 -0.24  0.00   
+      8   H                0.20 -0.07 -0.09    0.19  0.37  0.04   -0.17  0.11  0.19   
+      9   H               -0.41 -0.14  0.01    0.09 -0.13  0.02   -0.02  0.00 -0.22   
+     10   H               -0.24  0.37 -0.01   -0.15 -0.05 -0.01   -0.02 -0.01 -0.22   
+     11   H                0.07 -0.03 -0.06    0.02  0.28 -0.03    0.35  0.02 -0.01   
+     12   H                0.20 -0.08 -0.09    0.08  0.41 -0.07   -0.20  0.04  0.19   
+     13   H               -0.13  0.00  0.02    0.09  0.04  0.05    0.38 -0.11  0.09   
+     14   H               -0.37 -0.17  0.11    0.33 -0.07  0.20   -0.17  0.05 -0.17   
+     15   H               -0.10  0.08  0.02   -0.05  0.09 -0.06    0.37 -0.14  0.09   
+     16   H               -0.18  0.37  0.09   -0.31  0.13 -0.20   -0.17  0.06 -0.17   
+
+  Vibration                       19                  20                  21          
+  Freq [cm^-1]                1168.7012           1212.5232           1236.1775       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              2.7093              1.1679              1.4950        
+  Force const [mDyne/A]         2.1803              1.0116              1.3460        
+  Turning point v=0 [a0]        0.1950              0.2916              0.2552        
+  RMS dev v=0 [a0 u^1/2]        0.2270              0.2228              0.2207        
+  IR activ [km/mol]             1.4017              0.0044              0.6316        
+  Char temp [K]               1681.5009           1744.5509           1778.5842       
+  ----------------------------------------------------------------------------------
+      1   C                0.14 -0.07  0.03   -0.00 -0.00 -0.02    0.04  0.10  0.00   
+      2   C               -0.02  0.15 -0.02   -0.01 -0.00 -0.08   -0.06 -0.04  0.01   
+      3   C               -0.11 -0.11 -0.01    0.01  0.00  0.08   -0.02  0.07  0.01   
+      4   C                0.15 -0.03  0.03    0.00 -0.00  0.02   -0.03 -0.10  0.01   
+      5   C               -0.05  0.16  0.01   -0.01 -0.00 -0.02    0.05  0.05 -0.02   
+      6   C               -0.14 -0.10  0.02    0.00 -0.00  0.02    0.01 -0.07 -0.02   
+      7   H               -0.06  0.12 -0.05    0.09  0.10  0.01    0.14  0.30  0.04   
+      8   H                0.25 -0.16 -0.16   -0.07 -0.08  0.01    0.13  0.41  0.07   
+      9   H                0.01  0.16  0.07    0.03  0.00  0.68   -0.29 -0.09  0.00   
+     10   H               -0.09 -0.13  0.08   -0.04 -0.03 -0.67   -0.17  0.25 -0.01   
+     11   H               -0.13 -0.06 -0.04   -0.01  0.13 -0.02   -0.07 -0.32  0.06   
+     12   H                0.30 -0.04 -0.16    0.01 -0.10 -0.00   -0.15 -0.40  0.10   
+     13   H                0.01 -0.24  0.04    0.00  0.06 -0.02    0.11 -0.00 -0.02   
+     14   H               -0.01  0.26 -0.35   -0.03 -0.02  0.04    0.23  0.10 -0.06   
+     15   H                0.15  0.19  0.03    0.04  0.05  0.02    0.09 -0.07 -0.02   
+     16   H               -0.18 -0.22 -0.33    0.01 -0.03 -0.04    0.12 -0.23 -0.05   
+
+  Vibration                       22                  23                  24          
+  Freq [cm^-1]                1273.3116           1312.9602           1369.9447       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.5105              1.7988              1.0624        
+  Force const [mDyne/A]         1.4429              1.8270              1.1748        
+  Turning point v=0 [a0]        0.2502              0.2258              0.2876        
+  RMS dev v=0 [a0 u^1/2]        0.2174              0.2141              0.2096        
+  IR activ [km/mol]             0.1082              0.1300              0.2950        
+  Char temp [K]               1832.0119           1889.0574           1971.0454       
+  ----------------------------------------------------------------------------------
+      1   C               -0.00 -0.07 -0.03   -0.00 -0.00  0.12    0.01  0.02  0.02   
+      2   C               -0.01  0.03  0.00   -0.01  0.01 -0.09    0.01 -0.02 -0.00   
+      3   C                0.03  0.01 -0.00    0.01  0.01  0.09   -0.02 -0.00  0.00   
+      4   C               -0.04 -0.06  0.03   -0.00 -0.01 -0.12    0.01  0.02 -0.02   
+      5   C                0.12  0.02  0.01    0.00  0.02  0.11   -0.04 -0.00 -0.00   
+      6   C               -0.09  0.09 -0.02    0.01  0.01 -0.11    0.03 -0.02  0.00   
+      7   H               -0.05 -0.21 -0.05   -0.39 -0.15 -0.02   -0.05 -0.04  0.00   
+      8   H               -0.06 -0.23 -0.04    0.27  0.17 -0.12   -0.08 -0.27 -0.04   
+      9   H               -0.17  0.00  0.03   -0.01  0.01  0.13    0.57  0.09 -0.03   
+     10   H                0.13 -0.10 -0.03    0.01 -0.01 -0.13   -0.39  0.42  0.01   
+     11   H               -0.09 -0.19  0.06    0.22 -0.36  0.04    0.01 -0.06  0.00   
+     12   H               -0.09 -0.21  0.05   -0.11  0.31  0.11   -0.10 -0.26  0.06   
+     13   H                0.32  0.06  0.03   -0.03 -0.29  0.14   -0.09 -0.03 -0.00   
+     14   H                0.48  0.08  0.04    0.05  0.10 -0.19    0.27  0.06  0.00   
+     15   H               -0.22  0.24 -0.04   -0.16 -0.25 -0.11    0.05 -0.08  0.01   
+     16   H               -0.33  0.35 -0.06    0.03  0.12  0.18   -0.17  0.21 -0.01   
+
+  Vibration                       25                  26                  27          
+  Freq [cm^-1]                1377.1838           1473.0342           1498.5260       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.1626              1.2043              1.2714        
+  Force const [mDyne/A]         1.2992              1.5396              1.6821        
+  Turning point v=0 [a0]        0.2742              0.2605              0.2514        
+  RMS dev v=0 [a0 u^1/2]        0.2091              0.2022              0.2004        
+  IR activ [km/mol]             1.3746              0.0088              1.1589        
+  Char temp [K]               1981.4609           2119.3683           2156.0453       
+  ----------------------------------------------------------------------------------
+      1   C                0.00  0.01  0.06    0.02 -0.05 -0.03    0.01 -0.02  0.01   
+      2   C               -0.01  0.00 -0.05    0.03  0.01 -0.02    0.01 -0.00  0.03   
+      3   C               -0.01 -0.00 -0.05   -0.02  0.03  0.02   -0.01  0.00 -0.03   
+      4   C               -0.00 -0.00  0.06   -0.05 -0.02  0.03   -0.02 -0.01 -0.01   
+      5   C               -0.00 -0.00 -0.02    0.06 -0.01 -0.02    0.01  0.01  0.10   
+      6   C               -0.00  0.00 -0.02   -0.05  0.03  0.02   -0.01  0.01 -0.10   
+      7   H               -0.28 -0.32 -0.03   -0.02 -0.27 -0.05    0.13  0.41  0.04   
+      8   H                0.19  0.26 -0.03    0.12  0.21  0.01   -0.06 -0.27 -0.05   
+      9   H                0.03  0.01  0.14    0.37  0.07 -0.00    0.07  0.01 -0.02   
+     10   H                0.02 -0.01  0.14   -0.25  0.28 -0.01   -0.05  0.06  0.02   
+     11   H               -0.02  0.42 -0.06   -0.15 -0.22  0.07    0.15  0.40 -0.07   
+     12   H               -0.01 -0.33 -0.01    0.04  0.23 -0.02   -0.12 -0.25  0.07   
+     13   H                0.38  0.12  0.01    0.27  0.11 -0.01    0.34 -0.13  0.15   
+     14   H               -0.16 -0.04  0.01   -0.34 -0.11  0.03   -0.23 -0.00 -0.09   
+     15   H                0.23 -0.33  0.02   -0.15  0.26 -0.01   -0.35  0.10 -0.15   
+     16   H               -0.10  0.13  0.00    0.20 -0.29 -0.01    0.19 -0.14  0.09   
+
+  Vibration                       28                  29                  30          
+  Freq [cm^-1]                1524.7058           1606.9421           1673.5686       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.1514              1.2901              1.6138        
+  Force const [mDyne/A]         1.5770              1.9627              2.6630        
+  Turning point v=0 [a0]        0.2619              0.2410              0.2111        
+  RMS dev v=0 [a0 u^1/2]        0.1987              0.1936              0.1897        
+  IR activ [km/mol]             2.1278              2.5192              4.6277        
+  Char temp [K]               2193.7122           2312.0319           2407.8927       
+  ----------------------------------------------------------------------------------
+      1   C               -0.00  0.02  0.04   -0.02 -0.06 -0.01    0.06  0.14  0.01   
+      2   C               -0.00 -0.02  0.02   -0.05 -0.01  0.00   -0.02 -0.03 -0.00   
+      3   C                0.01  0.02  0.02   -0.03  0.04  0.00    0.00 -0.04  0.00   
+      4   C               -0.02 -0.01  0.04    0.02  0.06 -0.01    0.04  0.15 -0.02   
+      5   C                0.02  0.02 -0.05    0.07  0.02  0.01    0.01 -0.03  0.01   
+      6   C                0.00 -0.03 -0.05    0.05 -0.05  0.01   -0.02 -0.02 -0.01   
+      7   H                0.03  0.35  0.05    0.08  0.19  0.02   -0.13 -0.39 -0.05   
+      8   H               -0.10 -0.33 -0.05    0.12  0.32  0.04   -0.14 -0.39 -0.05   
+      9   H                0.02 -0.02 -0.03    0.37  0.07 -0.03   -0.16 -0.06  0.02   
+     10   H                0.02  0.00 -0.03    0.24 -0.28 -0.01    0.09 -0.15 -0.01   
+     11   H               -0.19 -0.29  0.08   -0.06 -0.20  0.04   -0.14 -0.38  0.08   
+     12   H                0.12  0.32 -0.07   -0.11 -0.32  0.07   -0.13 -0.39  0.08   
+     13   H                0.35  0.17 -0.04   -0.18 -0.04 -0.01    0.12 -0.03  0.03   
+     14   H               -0.29 -0.05 -0.03   -0.38 -0.07 -0.03   -0.25 -0.11  0.07   
+     15   H                0.17 -0.35 -0.02   -0.12  0.14 -0.02   -0.11  0.05 -0.03   
+     16   H               -0.20  0.22 -0.05   -0.26  0.28 -0.05    0.13 -0.24 -0.06   
+
+  Vibration                       31                  32                  33          
+  Freq [cm^-1]                1682.5522           1687.0427           1696.4178       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.5814              1.9872              1.7402        
+  Force const [mDyne/A]         2.6377              3.3323              2.9506        
+  Turning point v=0 [a0]        0.2127              0.1895              0.2020        
+  RMS dev v=0 [a0 u^1/2]        0.1892              0.1889              0.1884        
+  IR activ [km/mol]            10.5596              0.5313              1.9442        
+  Char temp [K]               2420.8180           2427.2788           2440.7675       
+  ----------------------------------------------------------------------------------
+      1   C                0.00 -0.09 -0.00    0.07  0.11  0.00    0.03 -0.03  0.02   
+      2   C               -0.04 -0.00  0.01   -0.12 -0.10  0.01    0.01  0.00  0.00   
+      3   C               -0.03  0.03  0.01   -0.03  0.15 -0.00   -0.01  0.01 -0.00   
+      4   C                0.06  0.07 -0.01   -0.01 -0.14  0.01   -0.04 -0.01 -0.02   
+      5   C               -0.11 -0.07 -0.01   -0.00  0.04  0.00    0.18  0.00  0.01   
+      6   C               -0.04  0.12 -0.02   -0.03 -0.03  0.01   -0.14  0.11 -0.01   
+      7   H                0.14  0.24  0.04   -0.03 -0.28 -0.03    0.01  0.10  0.01   
+      8   H                0.13  0.10 -0.05   -0.04 -0.25 -0.06    0.01 -0.19 -0.05   
+      9   H                0.30  0.07 -0.03    0.53  0.01 -0.03    0.05  0.01 -0.01   
+     10   H                0.19 -0.24 -0.02    0.41 -0.34 -0.02   -0.03  0.03  0.01   
+     11   H               -0.03 -0.27  0.06    0.15  0.23 -0.05    0.05  0.08 -0.01   
+     12   H                0.04 -0.17 -0.04    0.12  0.22 -0.08   -0.12 -0.15  0.06   
+     13   H                0.31  0.06  0.02   -0.05 -0.07  0.01   -0.59 -0.10 -0.05   
+     14   H                0.40 -0.00  0.13    0.13  0.08 -0.02   -0.20 -0.09  0.06   
+     15   H                0.21 -0.23  0.03    0.01  0.08  0.00    0.40 -0.44  0.07   
+     16   H                0.32 -0.23  0.14    0.05 -0.14 -0.02    0.10 -0.20 -0.05   
+
+  Vibration                       34                  35                  36          
+  Freq [cm^-1]                1820.4885           1820.9774           1830.6813       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.0989              1.0816              1.1195        
+  Force const [mDyne/A]         2.1458              2.1131              2.2106        
+  Turning point v=0 [a0]        0.2453              0.2472              0.2424        
+  RMS dev v=0 [a0 u^1/2]        0.1818              0.1818              0.1813        
+  IR activ [km/mol]             0.0893              0.2382              0.1868        
+  Char temp [K]               2619.2776           2619.9811           2633.9427       
+  ----------------------------------------------------------------------------------
+      1   C                0.05 -0.01 -0.02   -0.03  0.01  0.01   -0.05  0.02  0.02   
+      2   C               -0.01 -0.00  0.00   -0.00  0.00  0.00    0.01  0.01  0.00   
+      3   C                0.01 -0.01  0.00   -0.00 -0.00  0.00    0.00 -0.01  0.00   
+      4   C               -0.05  0.02  0.02   -0.03  0.01  0.01   -0.05  0.02  0.02   
+      5   C                0.01 -0.02  0.02    0.01 -0.03  0.03    0.01  0.04 -0.03   
+      6   C               -0.02 -0.02 -0.02    0.02  0.02  0.03   -0.02 -0.03 -0.02   
+      7   H               -0.37  0.14 -0.17    0.27 -0.12  0.12    0.32 -0.13  0.15   
+      8   H               -0.23  0.03  0.36    0.17 -0.03 -0.26    0.20 -0.05 -0.33   
+      9   H                0.01  0.00 -0.00   -0.01  0.00  0.00   -0.05 -0.00  0.00   
+     10   H               -0.01  0.01  0.00   -0.01  0.00  0.00   -0.04  0.03  0.00   
+     11   H                0.38 -0.10  0.17    0.29 -0.06  0.12    0.34 -0.08  0.15   
+     12   H                0.20 -0.14 -0.35    0.15 -0.10 -0.26    0.18 -0.11 -0.32   
+     13   H               -0.04  0.25 -0.00   -0.08  0.38 -0.00    0.06 -0.31  0.00   
+     14   H               -0.01  0.04 -0.25    0.02  0.07 -0.38   -0.06 -0.06  0.31   
+     15   H                0.19  0.17 -0.01   -0.30 -0.24  0.02    0.23  0.21 -0.02   
+     16   H                0.04  0.04  0.24   -0.04 -0.09 -0.37   -0.01  0.11  0.30   
+
+  Vibration                       37                  38                  39          
+  Freq [cm^-1]                1842.4367           2097.4175           3589.1328       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.1215              6.7354              1.0665        
+  Force const [mDyne/A]         2.2430             17.4575              8.0942        
+  Turning point v=0 [a0]        0.2414              0.0923              0.1774        
+  RMS dev v=0 [a0 u^1/2]        0.1808              0.1694              0.1295        
+  IR activ [km/mol]             0.0038              1.2559              0.0958        
+  Char temp [K]               2650.8563           3017.7168           5163.9629       
+  ----------------------------------------------------------------------------------
+      1   C               -0.03  0.02  0.01   -0.06 -0.00  0.01    0.04 -0.01 -0.02   
+      2   C                0.00  0.00  0.00    0.50 -0.09 -0.04   -0.00  0.00  0.00   
+      3   C               -0.00  0.00 -0.00   -0.45  0.23  0.04    0.00  0.00 -0.00   
+      4   C                0.03 -0.00 -0.01    0.05 -0.04 -0.00   -0.04  0.02  0.02   
+      5   C                0.01 -0.05  0.04   -0.01  0.01  0.00    0.00 -0.00  0.00   
+      6   C               -0.04 -0.03 -0.04    0.01 -0.00 -0.00   -0.00 -0.00 -0.00   
+      7   H                0.21 -0.10  0.10   -0.13 -0.07 -0.02   -0.18  0.01  0.51   
+      8   H                0.12 -0.06 -0.22   -0.17 -0.12  0.05   -0.32  0.15 -0.27   
+      9   H               -0.02 -0.00  0.00   -0.24 -0.33  0.03    0.01 -0.02 -0.00   
+     10   H                0.01 -0.01 -0.00   -0.02 -0.41  0.00   -0.02 -0.01  0.00   
+     11   H               -0.23  0.04 -0.09    0.06 -0.13  0.02    0.14 -0.14 -0.50   
+     12   H               -0.12  0.05  0.22    0.05 -0.20 -0.04    0.35 -0.06  0.26   
+     13   H               -0.08  0.42 -0.00    0.01  0.01  0.00    0.01 -0.00 -0.04   
+     14   H                0.00  0.06 -0.42    0.05  0.03 -0.02   -0.01  0.06  0.01   
+     15   H                0.32  0.28 -0.02   -0.00  0.01 -0.00   -0.01  0.00  0.04   
+     16   H                0.04  0.08  0.42   -0.02  0.05  0.02    0.05  0.04 -0.02   
+
+  Vibration                       40                  41                  42          
+  Freq [cm^-1]                3589.4260           3607.1941           3610.5873       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.0668              1.0652              1.0696        
+  Force const [mDyne/A]         8.0982              8.1659              8.2157        
+  Turning point v=0 [a0]        0.1773              0.1770              0.1766        
+  RMS dev v=0 [a0 u^1/2]        0.1295              0.1292              0.1291        
+  IR activ [km/mol]             8.6900              4.2393              4.0882        
+  Char temp [K]               5164.3849           5189.9492           5194.8313       
+  ----------------------------------------------------------------------------------
+      1   C                0.04 -0.01 -0.02   -0.00  0.00  0.00    0.00 -0.00 -0.01   
+      2   C               -0.00  0.00  0.00    0.00 -0.00  0.00   -0.00  0.00 -0.00   
+      3   C               -0.00 -0.00  0.00    0.00  0.00  0.00    0.00  0.00  0.00   
+      4   C                0.04 -0.02 -0.02   -0.00  0.00  0.00   -0.00  0.00  0.01   
+      5   C               -0.00  0.00 -0.00   -0.00  0.04 -0.03   -0.01  0.04 -0.04   
+      6   C               -0.00 -0.00 -0.00   -0.03 -0.03 -0.03    0.03  0.03  0.03   
+      7   H               -0.18  0.01  0.51    0.02  0.00 -0.05   -0.02 -0.00  0.07   
+      8   H               -0.32  0.15 -0.27    0.01 -0.01  0.01   -0.02  0.01 -0.01   
+      9   H                0.00 -0.02 -0.00   -0.00  0.01  0.00    0.00 -0.01  0.00   
+     10   H                0.02  0.01 -0.00   -0.00 -0.00  0.00   -0.01 -0.01  0.00   
+     11   H               -0.14  0.14  0.50    0.01 -0.02 -0.05    0.02 -0.02 -0.07   
+     12   H               -0.36  0.06 -0.26    0.01 -0.00  0.01    0.02 -0.00  0.01   
+     13   H               -0.00  0.00  0.03   -0.04  0.04  0.49   -0.05  0.04  0.52   
+     14   H                0.01 -0.05 -0.01    0.10 -0.48 -0.12    0.09 -0.45 -0.11   
+     15   H               -0.00  0.00  0.03   -0.04  0.03  0.49    0.05 -0.03 -0.52   
+     16   H                0.04  0.03 -0.01    0.37  0.31 -0.15   -0.35 -0.29  0.14   
+
+  Vibration                       43                  44                  45          
+  Freq [cm^-1]                3692.6330           3699.0680           3699.2308       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.0892              1.1078              1.1086        
+  Force const [mDyne/A]         8.7502              8.9306              8.9380        
+  Turning point v=0 [a0]        0.1730              0.1714              0.1713        
+  RMS dev v=0 [a0 u^1/2]        0.1277              0.1276              0.1276        
+  IR activ [km/mol]            17.0789              3.5286              0.0055        
+  Char temp [K]               5312.8768           5322.1353           5322.3696       
+  ----------------------------------------------------------------------------------
+      1   C                0.00  0.00 -0.01   -0.02  0.01 -0.06    0.02 -0.02  0.06   
+      2   C                0.01 -0.06 -0.00   -0.00  0.01  0.00   -0.00  0.00 -0.00   
+      3   C                0.04  0.04 -0.00   -0.00 -0.00  0.00    0.00  0.00  0.00   
+      4   C               -0.00 -0.00 -0.01   -0.03 -0.00 -0.06   -0.03 -0.00 -0.06   
+      5   C               -0.00  0.00  0.00   -0.00  0.01  0.01   -0.00  0.01  0.00   
+      6   C               -0.00  0.00  0.00   -0.00 -0.00  0.01    0.00  0.00 -0.00   
+      7   H               -0.02 -0.00  0.05   -0.15  0.01  0.41    0.15 -0.01 -0.41   
+      8   H                0.03 -0.01  0.02    0.40 -0.18  0.32   -0.40  0.19 -0.32   
+      9   H               -0.14  0.69  0.01    0.01 -0.07 -0.00    0.01 -0.03 -0.00   
+     10   H               -0.53 -0.46  0.05    0.05  0.04 -0.01   -0.02 -0.02  0.00   
+     11   H               -0.01  0.02  0.05   -0.12  0.12  0.40   -0.12  0.12  0.41   
+     12   H                0.03 -0.00  0.02    0.43 -0.08  0.31    0.44 -0.08  0.32   
+     13   H                0.00 -0.00 -0.01    0.00 -0.01 -0.05   -0.00 -0.00 -0.02   
+     14   H                0.00 -0.01 -0.00    0.02 -0.07 -0.02    0.01 -0.06 -0.01   
+     15   H                0.00 -0.00 -0.01    0.00 -0.00 -0.05   -0.00 -0.00  0.02   
+     16   H                0.01  0.00 -0.00    0.06  0.05 -0.02   -0.05 -0.04  0.02   
+
+  Vibration                       46                  47                  48          
+  Freq [cm^-1]                3721.8266           3723.4455           3729.2010       
+  Irrep                           A                   A                   A           
+  Reduced mass [u]              1.1064              1.1104              1.1102        
+  Force const [mDyne/A]         9.0294              9.0707              9.0969        
+  Turning point v=0 [a0]        0.1710              0.1706              0.1705        
+  RMS dev v=0 [a0 u^1/2]        0.1272              0.1272              0.1271        
+  IR activ [km/mol]             3.9732              0.2644              5.8735        
+  Char temp [K]               5354.8799           5357.2090           5365.4899       
+  ----------------------------------------------------------------------------------
+      1   C                0.00 -0.00  0.00   -0.00 -0.00  0.00   -0.00  0.00 -0.01   
+      2   C                0.02 -0.05 -0.00   -0.01  0.03  0.00    0.00 -0.00 -0.00   
+      3   C               -0.05 -0.03  0.00    0.03  0.02 -0.00    0.00  0.00 -0.00   
+      4   C               -0.00  0.00 -0.00    0.00 -0.00 -0.00   -0.00 -0.00 -0.01   
+      5   C                0.01 -0.02 -0.03    0.01 -0.04 -0.04    0.01 -0.04 -0.05   
+      6   C               -0.02 -0.01  0.03   -0.03 -0.02  0.05    0.03  0.02 -0.05   
+      7   H                0.01 -0.00 -0.03    0.02 -0.00 -0.04   -0.02  0.00  0.06   
+      8   H               -0.04  0.02 -0.03   -0.01  0.01 -0.01    0.04 -0.02  0.04   
+      9   H               -0.12  0.59  0.01    0.07 -0.35 -0.00   -0.00  0.00 -0.00   
+     10   H                0.46  0.39 -0.04   -0.27 -0.23  0.03   -0.00 -0.00 -0.00   
+     11   H               -0.01  0.01  0.03   -0.01  0.01  0.04   -0.02  0.02  0.06   
+     12   H                0.04 -0.01  0.03    0.01 -0.00  0.01    0.05 -0.01  0.04   
+     13   H               -0.02  0.02  0.24   -0.04  0.03  0.40   -0.04  0.03  0.50   
+     14   H               -0.05  0.24  0.06   -0.09  0.43  0.10   -0.10  0.46  0.11   
+     15   H                0.02 -0.02 -0.24    0.04 -0.03 -0.40   -0.04  0.03  0.50   
+     16   H                0.19  0.16 -0.07    0.33  0.28 -0.13   -0.36 -0.30  0.14   
+
+  ==> Thermochemistry Components <==
+
+  Entropy, S
+    Electronic S                             0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K] (multiplicity = 1)
+    Translational S                         39.129 [cal/(mol K)]      163.717 [J/(mol K)]       0.06235649 [mEh/K] (mol. weight = 82.0783 [u], P = 101325.00 [Pa])
+    Rotational S                            26.190 [cal/(mol K)]      109.579 [J/(mol K)]       0.04173644 [mEh/K] (symmetry no. = 1)
+    Vibrational S                            6.937 [cal/(mol K)]       29.026 [J/(mol K)]       0.01105541 [mEh/K]
+  Total S                                   72.257 [cal/(mol K)]      302.322 [J/(mol K)]       0.11514834 [mEh/K]
+  Correction S                               0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  Constant volume heat capacity, Cv
+    Electronic Cv                            0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+    Translational Cv                         2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Rotational Cv                            2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Vibrational Cv                          11.899 [cal/(mol K)]       49.784 [J/(mol K)]       0.01896173 [mEh/K]
+  Total Cv                                  17.860 [cal/(mol K)]       74.727 [J/(mol K)]       0.02846216 [mEh/K]
+  Correction Cv                              0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  Constant pressure heat capacity, Cp
+    Electronic Cp                            0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+    Translational Cp                         4.968 [cal/(mol K)]       20.786 [J/(mol K)]       0.00791703 [mEh/K]
+    Rotational Cp                            2.981 [cal/(mol K)]       12.472 [J/(mol K)]       0.00475022 [mEh/K]
+    Vibrational Cp                          11.899 [cal/(mol K)]       49.784 [J/(mol K)]       0.01896173 [mEh/K]
+  Total Cp                                  19.847 [cal/(mol K)]       83.042 [J/(mol K)]       0.03162897 [mEh/K]
+  Correction Cp                              0.000 [cal/(mol K)]        0.000 [J/(mol K)]       0.00000000 [mEh/K]
+
+  ==> Thermochemistry Energy Analysis <==
+
+  Raw electronic energy, E_e
+  Total E_e, Electronic energy at well bottom                                          -230.26184542 [Eh]
+
+  Zero-point vibrational energy, ZPVE = Sum_i omega_i / 2,  E_0 = E_e + ZPVE
+    Vibrational ZPVE                       109.602 [kcal/mol]      458.575 [kJ/mol]       0.17466195 [Eh]       38333.868 [cm^-1]
+  Correction ZPVE to E_e                   109.602 [kcal/mol]      458.575 [kJ/mol]       0.17466195 [Eh]       38333.868 [cm^-1]
+  Total E_0, Enthalpy at 0 [K]                                                         -230.08718347 [Eh]
+  *** Absolute enthalpy, not an enthalpy of formation ***
+
+  Thermal (internal) energy, E (includes ZPVE and finite-temperature corrections)
+    Electronic contrib to E beyond E_e       0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational contrib to E               0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Rotational contrib to E                  0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Vibrational contrib to E               110.939 [kcal/mol]      464.168 [kJ/mol]       0.17679239 [Eh]
+  Correction E                             112.716 [kcal/mol]      471.605 [kJ/mol]       0.17962494 [Eh]
+  Total E, Thermal (internal) energy at  298.15 [K]                                    -230.08222048 [Eh]
+
+  Enthalpy, H_trans = E_trans + k_B * T = E_trans + P * V
+    Electronic contrib to H beyond E_e       0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational contrib to H               1.481 [kcal/mol]        6.197 [kJ/mol]       0.00236046 [Eh]
+    Rotational contrib to H                  0.889 [kcal/mol]        3.718 [kJ/mol]       0.00141628 [Eh]
+    Vibrational contrib to H               110.939 [kcal/mol]      464.168 [kJ/mol]       0.17679239 [Eh]
+  Correction H                             113.309 [kcal/mol]      474.084 [kJ/mol]       0.18056913 [Eh]
+  Total H, Enthalpy at  298.15 [K]                                                     -230.08127630 [Eh]
+  *** Absolute enthalpy, not an enthalpy of formation ***
+
+  Gibbs free energy, G = H - T * S
+    Electronic contrib to G beyond E_e       0.000 [kcal/mol]        0.000 [kJ/mol]       0.00000000 [Eh]
+    Translational contrib to G             -10.185 [kcal/mol]      -42.615 [kJ/mol]      -0.01623113 [Eh]
+    Rotational contrib to G                 -6.920 [kcal/mol]      -28.953 [kJ/mol]      -0.01102744 [Eh]
+    Vibrational contrib to G               108.871 [kcal/mol]      455.514 [kJ/mol]       0.17349622 [Eh]
+  Correction G                              91.766 [kcal/mol]      383.947 [kJ/mol]       0.14623765 [Eh]
+  Total G, Gibbs energy at  298.15 [K]                                                 -230.11560778 [Eh]
+  *** Absolute Gibbs energy, not a free energy of formation ***
+

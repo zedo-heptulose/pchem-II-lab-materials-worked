@@ -1,0 +1,300 @@
+
+    -----------------------------------------------------------------------
+          Psi4: An Open-Source Ab Initio Electronic Structure Package
+                               Psi4 1.9.1 release
+
+                         Git: Rev {} zzzzzzz 
+
+
+    D. G. A. Smith, L. A. Burns, A. C. Simmonett, R. M. Parrish,
+    M. C. Schieber, R. Galvelis, P. Kraus, H. Kruse, R. Di Remigio,
+    A. Alenaizan, A. M. James, S. Lehtola, J. P. Misiewicz, M. Scheurer,
+    R. A. Shaw, J. B. Schriber, Y. Xie, Z. L. Glick, D. A. Sirianni,
+    J. S. O'Brien, J. M. Waldrop, A. Kumar, E. G. Hohenstein,
+    B. P. Pritchard, B. R. Brooks, H. F. Schaefer III, A. Yu. Sokolov,
+    K. Patkowski, A. E. DePrince III, U. Bozkaya, R. A. King,
+    F. A. Evangelista, J. M. Turney, T. D. Crawford, C. D. Sherrill,
+    J. Chem. Phys. 152(18) 184108 (2020). https://doi.org/10.1063/5.0006002
+
+                            Additional Code Authors
+    E. T. Seidl, C. L. Janssen, E. F. Valeev, M. L. Leininger,
+    J. F. Gonthier, R. M. Richard, H. R. McAlexander, M. Saitow, X. Wang,
+    P. Verma, M. H. Lechner, A. Jiang, S. Behnle, A. G. Heide,
+    M. F. Herbst, and D. L. Poole
+
+             Previous Authors, Complete List of Code Contributors,
+                       and Citations for Specific Modules
+    https://github.com/psi4/psi4/blob/master/codemeta.json
+    https://github.com/psi4/psi4/graphs/contributors
+    http://psicode.org/psi4manual/master/introduction.html#citing-psifour
+
+    -----------------------------------------------------------------------
+
+
+    Psi4 started on: Saturday, 22 February 2025 04:01PM
+
+    Process ID: 3617212
+    Host:       hpc-m36-1-4.local
+    PSIDATADIR: /gpfs/home/gdb20/.conda/envs/CHM4411L/share/psi4
+    Memory:     500.0 MiB
+    Threads:    1
+    
+  Memory set to 953.674 MiB by Python driver.
+
+Scratch directory: /tmp/
+   => Libint2 <=
+
+    Primary   basis highest AM E, G, H:  6, 6, 3
+    Auxiliary basis highest AM E, G, H:  7, 7, 4
+    Onebody   basis highest AM E, G, H:  -, -, -
+    Solid Harmonics ordering:            Gaussian
+
+*** tstart() called on hpc-m36-1-4.local
+*** at Sat Feb 22 16:02:09 2025
+
+   => Loading Basis Set <=
+
+    Name: STO-3G
+    Role: ORBITAL
+    Keyword: BASIS
+    atoms 1-8  entry C          line    61 file /gpfs/home/gdb20/.conda/envs/CHM4411L/share/psi4/basis/sto-3g.gbs 
+    atoms 9-18 entry H          line    19 file /gpfs/home/gdb20/.conda/envs/CHM4411L/share/psi4/basis/sto-3g.gbs 
+
+
+         ---------------------------------------------------------
+                                   SCF
+               by Justin Turney, Rob Parrish, Andy Simmonett
+                          and Daniel G. A. Smith
+                              RHF Reference
+                        1 Threads,    953 MiB Core
+         ---------------------------------------------------------
+
+  ==> Geometry <==
+
+    Molecular point group: c1
+    Full point group: C1
+
+    Geometry (in Angstrom), charge = 0, multiplicity = 1:
+
+       Center              X                  Y                   Z               Mass       
+    ------------   -----------------  -----------------  -----------------  -----------------
+         C            4.082578443555    -0.414149337797     0.308801043095    12.000000000000
+         C            2.772619443555    -0.539562337797     0.550987043095    12.000000000000
+         C            1.758915443555     0.109690662203    -0.247635956905    12.000000000000
+         C            0.445495443555    -0.018072337797    -0.002136956905    12.000000000000
+         C           -0.566742556445     0.634679662203    -0.805468956905    12.000000000000
+         C           -1.899165556445     0.574142662203    -0.647681956905    12.000000000000
+         C           -2.632354556445    -0.156729337797     0.360789043095    12.000000000000
+         C           -3.969116556445    -0.151026337797     0.431307043095    12.000000000000
+         H            4.809225443555    -0.921044337797     0.936106043095     1.007825032230
+         H            4.465138443555     0.188007662203    -0.509128956905     1.007825032230
+         H            2.446439443555    -1.156834337797     1.385595043095     1.007825032230
+         H            2.102098443555     0.723183662203    -1.078239956905     1.007825032230
+         H            0.116483443555    -0.633321337797     0.829961043095     1.007825032230
+         H           -0.196270556445     1.242940662203    -1.630759956905     1.007825032230
+         H           -2.505345556445     1.137842662203    -1.357076956905     1.007825032230
+         H           -2.079204556445    -0.736111337797     1.093992043095     1.007825032230
+         H           -4.584754556445     0.405504662203    -0.268050956905     1.007825032230
+         H           -4.481288556445    -0.714216337797     1.205323043095     1.007825032230
+
+  Running in c1 symmetry.
+
+  Rotational constants: A =      0.31656  B =      0.02216  C =      0.02071 [cm^-1]
+  Rotational constants: A =   9490.30181  B =    664.47190  C =    620.99256 [MHz]
+  Nuclear repulsion =  302.764572231906925
+
+  Charge       = 0
+  Multiplicity = 1
+  Electrons    = 58
+  Nalpha       = 29
+  Nbeta        = 29
+
+  ==> Algorithm <==
+
+  SCF Algorithm Type is DF.
+  DIIS enabled.
+  MOM disabled.
+  Fractional occupation disabled.
+  Guess Type is SAD.
+  Energy threshold   = 1.00e-06
+  Density threshold  = 1.00e-06
+  Integral threshold = 1.00e-12
+
+  ==> Primary Basis <==
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 34
+    Number of basis functions: 50
+    Number of Cartesian functions: 50
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+
+   => Loading Basis Set <=
+
+    Name: (STO-3G AUX)
+    Role: JKFIT
+    Keyword: DF_BASIS_SCF
+    atoms 1-8  entry C          line   198 file /gpfs/home/gdb20/.conda/envs/CHM4411L/share/psi4/basis/def2-universal-jkfit.gbs 
+    atoms 9-18 entry H          line    18 file /gpfs/home/gdb20/.conda/envs/CHM4411L/share/psi4/basis/def2-universal-jkfit.gbs 
+
+  ==> Integral Setup <==
+
+  DFHelper Memory: AOs need 0.019 GiB; user supplied 0.698 GiB. 
+  Using in-core AOs.
+
+  ==> MemDFJK: Density-Fitted J/K Matrices <==
+
+    J tasked:                   Yes
+    K tasked:                   Yes
+    wK tasked:                   No
+    OpenMP threads:               1
+    Memory [MiB]:               715
+    Algorithm:                 Core
+    Schwarz Cutoff:           1E-12
+    Mask sparsity (%):       5.6000
+    Fitting Condition:        1E-10
+
+   => Auxiliary Basis Set <=
+
+  Basis Set: (STO-3G AUX)
+    Blend: DEF2-UNIVERSAL-JKFIT
+    Number of shells: 260
+    Number of basis functions: 780
+    Number of Cartesian functions: 912
+    Spherical Harmonics?: true
+    Max angular momentum: 4
+
+  Minimum eigenvalue in the overlap matrix is 1.8179985607E-01.
+  Reciprocal condition number of the overlap matrix is 7.5184618952E-02.
+    Using symmetric orthogonalization.
+
+  ==> Pre-Iterations <==
+
+  SCF Guess: Superposition of Atomic Densities via on-the-fly atomic UHF (no occupation information).
+
+   -------------------------
+    Irrep   Nso     Nmo    
+   -------------------------
+     A         50      50 
+   -------------------------
+    Total      50      50
+   -------------------------
+
+  ==> Iterations <==
+
+                           Total Energy        Delta E     RMS |[F,P]|
+
+   @DF-RHF iter SAD:  -298.99349117896099   -2.98993e+02   0.00000e+00 
+   @DF-RHF iter   1:  -304.88792319474305   -5.89443e+00   2.55821e-03 DIIS/ADIIS
+   @DF-RHF iter   2:  -304.90555487666825   -1.76317e-02   7.45433e-04 DIIS/ADIIS
+   @DF-RHF iter   3:  -304.90766378155888   -2.10890e-03   3.24866e-04 DIIS/ADIIS
+   @DF-RHF iter   4:  -304.90797411235746   -3.10331e-04   8.28065e-05 DIIS
+   @DF-RHF iter   5:  -304.90801287801082   -3.87657e-05   1.36205e-05 DIIS
+   @DF-RHF iter   6:  -304.90801387029995   -9.92289e-07   3.01750e-06 DIIS
+   @DF-RHF iter   7:  -304.90801388766204   -1.73621e-08   6.92284e-07 DIIS
+  Energy and wave function converged.
+
+
+  ==> Post-Iterations <==
+
+    Orbital Energies [Eh]
+    ---------------------
+
+    Doubly Occupied:                                                      
+
+       1A    -11.031203     2A    -11.031063     3A    -11.030297  
+       4A    -11.029052     5A    -11.027984     6A    -11.027137  
+       7A    -11.017559     8A    -11.016777     9A     -1.059824  
+      10A     -1.027041    11A     -0.975010    12A     -0.916785  
+      13A     -0.796576    14A     -0.749982    15A     -0.714292  
+      16A     -0.681729    17A     -0.619397    18A     -0.595180  
+      19A     -0.566637    20A     -0.535616    21A     -0.504422  
+      22A     -0.491659    23A     -0.475481    24A     -0.451847  
+      25A     -0.431969    26A     -0.423481    27A     -0.383335  
+      28A     -0.304275    29A     -0.211189  
+
+    Virtual:                                                              
+
+      30A      0.185032    31A      0.294319    32A      0.398800  
+      33A      0.472403    34A      0.561728    35A      0.613060  
+      36A      0.664652    37A      0.674017    38A      0.688500  
+      39A      0.691591    40A      0.693380    41A      0.701089  
+      42A      0.708989    43A      0.845182    44A      0.867272  
+      45A      0.914683    46A      0.940395    47A      1.005143  
+      48A      1.038048    49A      1.087156    50A      1.131648  
+
+    Final Occupation by Irrep:
+              A 
+    DOCC [    29 ]
+    NA   [    29 ]
+    NB   [    29 ]
+
+  @DF-RHF Final Energy:  -304.90801388766204
+
+   => Energetics <=
+
+    Nuclear Repulsion Energy =            302.7645722319069250
+    One-Electron Energy =               -1013.0914942672513916
+    Two-Electron Energy =                 405.4189081476824867
+    Total Energy =                       -304.9080138876620367
+
+Computation Completed
+
+
+Properties will be evaluated at   0.000000,   0.000000,   0.000000 [a0]
+
+Properties computed using the SCF density matrix
+
+
+ Multipole Moments:
+
+ ------------------------------------------------------------------------------------
+     Multipole            Electronic (a.u.)      Nuclear  (a.u.)        Total (a.u.)
+ ------------------------------------------------------------------------------------
+
+ L = 1.  Multiply by 2.5417464519 to convert [e a0] to [Debye]
+ Dipole X            :         -0.0739737            0.0867360            0.0127624
+ Dipole Y            :          0.4278300           -0.4350312           -0.0072012
+ Dipole Z            :         -0.5609493            0.5697194            0.0087701
+ Magnitude           :                                                    0.0170777
+
+ ------------------------------------------------------------------------------------
+
+*** tstop() called on hpc-m36-1-4.local at Sat Feb 22 16:02:15 2025
+Module time:
+	user time   =       1.83 seconds =       0.03 minutes
+	system time =       0.19 seconds =       0.00 minutes
+	total time  =          6 seconds =       0.10 minutes
+Total time:
+	user time   =       1.83 seconds =       0.03 minutes
+	system time =       0.19 seconds =       0.00 minutes
+	total time  =          6 seconds =       0.10 minutes
+  ==> One Electron Grid Properties (v2.0) <==
+
+  ==> CubicScalarGrid <==
+
+    Filepath     = cubes
+    Total Points =           582400
+    XYZ Blocking =               10
+    X Points     =              130
+    Y Points     =               64
+    Z Points     =               70
+    X Spacing    =        2.000E-01
+    Y Spacing    =        2.000E-01
+    Z Spacing    =        2.000E-01
+    X Minimum    =       -1.269E+01
+    Y Minimum    =       -6.219E+00
+    Z Minimum    =       -7.132E+00
+    X Maximum    =        1.311E+01
+    Y Maximum    =        6.381E+00
+    Z Maximum    =        6.668E+00
+
+  Basis Set: STO-3G
+    Blend: STO-3G
+    Number of shells: 34
+    Number of basis functions: 50
+    Number of Cartesian functions: 50
+    Spherical Harmonics?: true
+    Max angular momentum: 1
+

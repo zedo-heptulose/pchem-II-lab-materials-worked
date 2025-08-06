@@ -1,0 +1,7 @@
+Trial,Metal,Voltage (V),Current (pA),Frequency (Hz),Wavelength (nm),
+1,Calcium, 0.002,-0.01,6.6667E14,450.00,
+2,Calcium, 1.031, 0.02,6.6667E14,450.00,
+3,Calcium, 2.040, 0.02,6.6667E14,450.00,
+4,Calcium, 3.011, 0.01,6.6667E14,450.00,
+5,Calcium, 4.020, 0.00,6.6667E14,450.00,
+6,Calcium, 5.001,-0.01,6.6667E14,450.00,
